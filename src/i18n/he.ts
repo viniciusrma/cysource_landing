@@ -1,13 +1,18 @@
 export default {
   cysource: 'CySource',
-  career: 'קריירה',
-  plans: 'תוכניות',
-  community: 'קהילה',
-  forOrganizations: 'לארגונים',
-  partners: 'שותפים',
+  career: 'Career',
+  plans: 'Plans',
+  community: 'Community',
+  forOrganizations: 'For organizations',
+  partners: 'Partners',
   mainText:
-    'הפוך למומחה אבטחת סייבר והבטח את עתידך המקצועי',
+    'Become an expert in Cybersecurity and secure your professional future',
   secondtext:
-    'עם Cysource, תוך חודשים ספורים תהפוך למומחה אבטחת סייבר.',
-  highlightedPhrase: 'בלי קשר לידע הקודם שלך.'
+    'With Cysource in just a few months you will become a Cybersecurity expert.',
+  highlightedPhrase: 'Regardless of your prior knowledge.',
+  startMyCareer: 'Start my career',
+  improveMyCareer: 'Improve my career',
+  expertsOrganizations: 'We are experts in training for organizations',
+  knowMore: 'Know more',
+  getInTouch: 'Get in touch'
 }

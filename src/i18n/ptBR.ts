@@ -1,13 +1,18 @@
 export default {
   cysource: 'CySource',
-  career: 'Carreira',
-  plans: 'Planos',
-  community: 'Comunidade',
-  forOrganizations: 'Para organizações',
-  partners: 'Parceiros',
+  career: 'Career',
+  plans: 'Plans',
+  community: 'Community',
+  forOrganizations: 'For organizations',
+  partners: 'Partners',
   mainText:
-    'Torne-se um especialista em segurança cibernética e garanta seu futuro profissional',
+    'Become an expert in Cybersecurity and secure your professional future',
   secondtext:
-    'Com o Cysource, em apenas alguns meses você se tornará um especialista em segurança cibernética.',
-  highlightedPhrase: 'Independentemente do seu conhecimento prévio.'
+    'With Cysource in just a few months you will become a Cybersecurity expert.',
+  highlightedPhrase: 'Regardless of your prior knowledge.',
+  startMyCareer: 'Start my career',
+  improveMyCareer: 'Improve my career',
+  expertsOrganizations: 'We are experts in training for organizations',
+  knowMore: 'Know more',
+  getInTouch: 'Get in touch'
 }

@@ -1,11 +1,13 @@
 import React from 'react'
 import Head from 'next/head'
-import { Container, Header, Landing } from '../styles/pages/Home'
+import { Container, ForOrgs, Header, Landing } from '../styles/pages/Home'
 import { useRouter } from 'next/dist/client/router'
 import ptBR from '../i18n/ptBR'
 import he from '../i18n/he'
 import logo from '../assets/logo.svg'
 import mainBackground from '../assets/mainBackground.svg'
+import forOrg from '../assets/forOrg.svg'
+
 
 const Home: React.FC = () => {
   const router = useRouter()
@@ -42,12 +44,30 @@ const Home: React.FC = () => {
       <Landing>
         <div id="texts">
           <h1>{lang.mainText}</h1>
-          <p>{lang.secondtext} <span>{lang.highlightedPhrase}</span></p>
+          <p>
+            {lang.secondtext} <span>{lang.highlightedPhrase}</span>
+          </p>
+          <div id="landing-buttons">
+            <button id="start">{lang.startMyCareer}</button>
+            <button>{lang.improveMyCareer}</button>
+          </div>
         </div>
         <div>
           <img src={mainBackground} alt="rocket" />
         </div>
       </Landing>
+      <ForOrgs>
+        <div>
+          <img src={forOrg} alt="rocket" />
+        </div>
+        <div id="texts">
+          <h1>{lang.expertsOrganizations}</h1>
+          <div id="forOrg-buttons">
+            <button id="start">{lang.knowMore}</button>
+            <button>{lang.getInTouch}</button>
+          </div>
+        </div>
+      </ForOrgs>
     </Container>
   )
 }

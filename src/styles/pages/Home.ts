@@ -1,7 +1,8 @@
 import styled from 'styled-components'
+import mainBackground from '../../assets/mainBackground.svg'
+import laptopBg from '../../assets/laptopBg.svg'
 
 export const Container = styled.div`
-  width: 100%;
   height: 100vh;
   display: flex;
   align-items: center;
@@ -37,13 +38,14 @@ export const Header = styled.div`
 `
 
 export const Landing = styled.div`
-  width: 100%;
+  @media only screen and (max-width: 1152px) {
+    background-image: url(${laptopBg});
+  }
+
   height: 91%;
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
   text-align: left;
-  padding: 100px 0px 0px 120px;
+  padding: 120px 0px 0px 400px;
 
   h1 {
     font-size: 36px;
@@ -64,6 +66,59 @@ export const Landing = styled.div`
   }
 
   #texts {
-    margin-right: 220px;
+    margin-right: 100px;
+    min-width: 500px;
+  }
+
+  #landing-buttons {
+    margin-top: 20px;
+    button {
+      padding: 16px 40px;
+      font: 600 16px 'Encode Sans Expanded', sans-serif;
+      background-color: ${(props) => props.theme.colors.primary};
+      color: ${(props) => props.theme.colors.background};
+      border-radius: 4px;
+      border: none;
+
+      &:hover {
+        box-shadow: 0px 0px 4px 0px ${(props) => props.theme.colors.primary};
+      }
+    }
+    #start {
+      margin-right: 10px;
+    }
+  }
+`
+
+export const ForOrgs = styled.div`
+  width: 100vw;
+  height: 500px;
+  display: flex;
+  flex-direction: space-between;
+  padding: 120px 300px 0px 300px;
+  background-color: ${(props) => props.theme.colors.primary};
+  text-align: left;
+
+  h1 {
+    max-width: 560px;
+  }
+
+  #forOrg-buttons {
+    margin-top: 20px;
+    button {
+      padding: 16px 40px;
+      font: 600 16px 'Encode Sans Expanded', sans-serif;
+      background-color: ${(props) => props.theme.colors.background};
+      color: ${(props) => props.theme.colors.color};
+      border-radius: 4px;
+      border: none;
+
+      &:hover {
+        box-shadow: 0px 0px 4px 0px ${(props) => props.theme.colors.background};
+      }
+    }
+    #start {
+      margin-right: 10px;
+    }
   }
 `
