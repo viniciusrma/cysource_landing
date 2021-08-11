@@ -1,17 +1,18 @@
 import styled from 'styled-components'
 import mainBackground from '../../assets/mainBackground.svg'
 import laptopBg from '../../assets/laptopBg.svg'
+import forOrg from '../../assets/forOrg.svg'
 
 export const Container = styled.div`
   display: flex;
   align-items: center;
   flex-direction: column;
   text-align: center;
-  width: 100vw;
+  width: 100%;
 `
 
 export const Header = styled.div`
-  width: 100vw;
+  width: 100%;
   height: 9vh;
   padding: 0px 20px;
   display: flex;
@@ -55,10 +56,10 @@ export const Landing = styled.div`
   }
 
   height: 91vh;
-  width: 100vw;
+  width: 100%;
   display: flex;
   text-align: left;
-  padding: 10vh 15vw;
+  padding: 10vh 20vw;
 
   background-image: url(${mainBackground});
   background-position: bottom right;
@@ -76,7 +77,7 @@ export const Landing = styled.div`
     margin-top: 24px;
     font-size: 16px;
     line-height: 32px;
-    width: 440px;
+    width: 500px;
   }
 
   span {
@@ -108,10 +109,15 @@ export const Landing = styled.div`
 `
 
 export const ForOrgs = styled.div`
-  width: 100vw;
+  background-image: url(${forOrg});
+  background-position: 400px 80px;
+  background-repeat: no-repeat;
+  background-size: 20%;
+
+  width: 100%;
   display: flex;
   flex-direction: space-between;
-  padding: 120px 300px 0px 300px;
+  padding: 10vh 20vw 10vh 50vw;
   background-color: ${(props) => props.theme.colors.primary};
   text-align: left;
 
@@ -135,6 +141,51 @@ export const ForOrgs = styled.div`
     }
     #start {
       margin-right: 10px;
+    }
+  }
+`
+
+export const ProfessionalCareer = styled.div`
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 10vh 20vw;
+  background-color: ${(props) => props.theme.colors.background};
+  text-align: left;
+
+  h1 {
+    text-align: center;
+  }
+
+  #left {
+    margin-top: 24px;
+    width: 40%;
+
+    .logo {
+      margin: 24px 0px;
+    }
+
+    p {
+      font: 400 16px 'Encode Sans Expanded', sans-serif;
+      text-align: left;
+    }
+
+    div {
+      margin-top: 20px;
+    }
+
+    a {
+      margin-top: 20px;
+      text-align: left;
+      background-color: ${(props) => props.theme.colors.background};
+      font: 600 16px 'Encode Sans Expanded', sans-serif;
+      color: ${(props) => props.theme.colors.primary};
+      border-radius: 4px;
+      border: none;
+
+      #arrow {
+        margin-left: 10px;
+      }
     }
   }
 `

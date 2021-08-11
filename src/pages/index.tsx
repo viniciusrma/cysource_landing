@@ -1,13 +1,17 @@
 import React from 'react'
 import Head from 'next/head'
-import { Container, ForOrgs, Header, Landing } from '../styles/pages/Home'
+import {
+  Container,
+  ForOrgs,
+  Header,
+  Landing,
+  ProfessionalCareer
+} from '../styles/pages/Home'
 import { useRouter } from 'next/dist/client/router'
 import ptBR from '../i18n/ptBR'
 import he from '../i18n/he'
 import logo from '../assets/logo.svg'
-import mainBackground from '../assets/mainBackground.svg'
-import forOrg from '../assets/forOrg.svg'
-
+import arrowRight from '../assets/arrowRight.svg'
 
 const Home: React.FC = () => {
   const router = useRouter()
@@ -54,9 +58,6 @@ const Home: React.FC = () => {
         </div>
       </Landing>
       <ForOrgs>
-        <div>
-          <img src={forOrg} alt="rocket" />
-        </div>
         <div id="texts">
           <h1>{lang.expertsOrganizations}</h1>
           <div id="forOrg-buttons">
@@ -65,6 +66,22 @@ const Home: React.FC = () => {
           </div>
         </div>
       </ForOrgs>
+      <ProfessionalCareer>
+        <h1>{lang.expertsOrganizations}</h1>
+        <div id="left">
+          <img className="logo" src={logo} alt="CySource logo" />
+          <p>{lang.careerPathText1}</p>
+          <br />
+          <p>{lang.careerPathText2}</p>
+
+          <div>
+            <a>
+              {lang.discoverPentest}
+              <img id="arrow" src={arrowRight} alt="Arrow right" />
+            </a>
+          </div>
+        </div>
+      </ProfessionalCareer>
     </Container>
   )
 }

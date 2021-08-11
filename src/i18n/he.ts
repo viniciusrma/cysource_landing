@@ -14,5 +14,12 @@ export default {
   improveMyCareer: 'Improve my career',
   expertsOrganizations: 'We are experts in training for organizations',
   knowMore: 'Know more',
-  getInTouch: 'Get in touch'
+  getInTouch: 'Get in touch',
+  careerPathText1:
+    'Did you dream of entering the high-tech market? Now is the time! Take the first step and start your career as a Cybersecurity professional!',
+  careerPathText2:
+    'Our team has instructors of the highest level of preparation, internationally known as Roman Zaikin, Shai Alfasi and Luli Rosenberg and a didactic way of transmitting the content, with real examples of failures discovered in the biggest companies in the world.',
+  pentestProfessional: 'Pentest Professional',
+  pentest: 'Pentest',
+  discoverPentest: 'Discover our Pentest Career Path'
 }
