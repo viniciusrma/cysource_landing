@@ -3,11 +3,11 @@ import mainBackground from '../../assets/mainBackground.svg'
 import laptopBg from '../../assets/laptopBg.svg'
 
 export const Container = styled.div`
-  height: 100vh;
   display: flex;
   align-items: center;
   flex-direction: column;
   text-align: center;
+  width: 100vw;
 `
 
 export const Header = styled.div`
@@ -42,10 +42,28 @@ export const Landing = styled.div`
     background-image: url(${laptopBg});
   }
 
-  height: 91%;
+  @media only screen and (max-width: 1440px) {
+  }
+
+  @media only screen and (max-width: 1194px) {
+  }
+
+  @media only screen and (max-width: 896px) {
+  }
+
+  @media only screen and (max-width: 667px) {
+  }
+
+  height: 91vh;
+  width: 100vw;
   display: flex;
   text-align: left;
-  padding: 120px 0px 0px 400px;
+  padding: 10vh 15vw;
+
+  background-image: url(${mainBackground});
+  background-position: bottom right;
+  background-repeat: no-repeat;
+  background-size: 50%;
 
   h1 {
     font-size: 36px;
@@ -65,11 +83,6 @@ export const Landing = styled.div`
     color: ${(props) => props.theme.colors.secondary};
   }
 
-  #texts {
-    margin-right: 100px;
-    min-width: 500px;
-  }
-
   #landing-buttons {
     margin-top: 20px;
     button {
@@ -87,12 +100,15 @@ export const Landing = styled.div`
     #start {
       margin-right: 10px;
     }
+
+    img {
+      background-repeat: no-repeat;
+    }
   }
 `
 
 export const ForOrgs = styled.div`
   width: 100vw;
-  height: 500px;
   display: flex;
   flex-direction: space-between;
   padding: 120px 300px 0px 300px;

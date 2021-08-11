@@ -52,9 +52,6 @@ const Home: React.FC = () => {
             <button>{lang.improveMyCareer}</button>
           </div>
         </div>
-        <div>
-          <img src={mainBackground} alt="rocket" />
-        </div>
       </Landing>
       <ForOrgs>
         <div>

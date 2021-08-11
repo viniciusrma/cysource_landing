@@ -11,6 +11,5 @@ export default createGlobalStyle`
     background: ${props => props.theme.colors.background };
     color: ${props => props.theme.colors.color };
     font: 400 16px 'Encode Sans Expanded', sans-serif;
-    margin: 0px 10%;
   }
 `
