@@ -1,7 +1,6 @@
 import styled from 'styled-components'
 import mainBackground from '../../assets/mainBackground.svg'
 import laptopBg from '../../assets/laptopBg.svg'
-import forOrg from '../../assets/forOrg.svg'
 
 export const Container = styled.div`
   display: flex;
@@ -26,6 +25,7 @@ export const Header = styled.div`
   }
 
   #nav-button {
+    cursor: pointer;
     padding: 32px 24px;
     background-color: ${(props) => props.theme.colors.background};
     color: ${(props) => props.theme.colors.color};
@@ -39,22 +39,6 @@ export const Header = styled.div`
 `
 
 export const Landing = styled.div`
-  @media only screen and (max-width: 1152px) {
-    background-image: url(${laptopBg});
-  }
-
-  @media only screen and (max-width: 1440px) {
-  }
-
-  @media only screen and (max-width: 1194px) {
-  }
-
-  @media only screen and (max-width: 896px) {
-  }
-
-  @media only screen and (max-width: 667px) {
-  }
-
   height: 91vh;
   width: 100%;
   display: flex;
@@ -66,81 +50,109 @@ export const Landing = styled.div`
   background-repeat: no-repeat;
   background-size: 50%;
 
-  h1 {
-    font-size: 36px;
-    margin-top: 40px;
-    color: ${(props) => props.theme.colors.primary};
-    width: 440px;
-  }
+  #texts {
+    margin-top: 10vh;
 
-  p {
-    margin-top: 24px;
-    font-size: 16px;
-    line-height: 32px;
-    width: 500px;
-  }
+    h1 {
+      font-size: 36px;
+      color: ${(props) => props.theme.colors.primary};
+      width: 440px;
+    }
 
-  span {
-    color: ${(props) => props.theme.colors.secondary};
-  }
+    p {
+      margin-top: 24px;
+      font-size: 16px;
+      line-height: 32px;
+      width: 500px;
+    }
 
-  #landing-buttons {
-    margin-top: 20px;
-    button {
-      padding: 16px 40px;
-      font: 600 16px 'Encode Sans Expanded', sans-serif;
-      background-color: ${(props) => props.theme.colors.primary};
-      color: ${(props) => props.theme.colors.background};
-      border-radius: 4px;
-      border: none;
+    span {
+      color: ${(props) => props.theme.colors.secondary};
+    }
 
-      &:hover {
-        box-shadow: 0px 0px 4px 0px ${(props) => props.theme.colors.primary};
+    #landing-buttons {
+      margin-top: 20px;
+      button {
+        cursor: pointer;
+        padding: 16px 40px;
+        font: 600 16px 'Encode Sans Expanded', sans-serif;
+        background-color: ${(props) => props.theme.colors.primary};
+        color: ${(props) => props.theme.colors.background};
+        border-radius: 4px;
+        border: none;
+
+        &:hover {
+          box-shadow: 4px 4px 0px #de3dbf;
+        }
       }
-    }
-    #start {
-      margin-right: 10px;
-    }
+      #start {
+        margin-right: 1vw;
+      }
 
-    img {
-      background-repeat: no-repeat;
+      img {
+        background-repeat: no-repeat;
+      }
     }
   }
 `
 
 export const ForOrgs = styled.div`
-  background-image: url(${forOrg});
-  background-position: 400px 80px;
-  background-repeat: no-repeat;
-  background-size: 20%;
-
   width: 100%;
   display: flex;
-  flex-direction: space-between;
-  padding: 10vh 20vw 10vh 50vw;
+  flex-direction: space-around;
+  padding: 10vh 20vw;
   background-color: ${(props) => props.theme.colors.primary};
-  text-align: left;
+  background: linear-gradient(
+    85.96deg,
+    #3cc28d 49.48%,
+    #469d90 58.84%,
+    #45a190 68.99%,
+    #489491 76.84%,
+    #4a8c92 80.99%,
+    #4d8093 84.97%,
+    #507595 90.12%,
+    #527095 92.45%,
+    #536a96 94.68%,
+    #556596 96.6%,
+    #566297 98.56%,
+    #575d97 100%
+  );
 
-  h1 {
-    max-width: 560px;
-  }
+  #texts {
+    margin-top: 4vh;
+    margin-left: 2vw;
 
-  #forOrg-buttons {
-    margin-top: 20px;
-    button {
-      padding: 16px 40px;
-      font: 600 16px 'Encode Sans Expanded', sans-serif;
-      background-color: ${(props) => props.theme.colors.background};
-      color: ${(props) => props.theme.colors.color};
-      border-radius: 4px;
-      border: none;
+    h1 {
+      max-width: 560px;
+      color: ${(props) => props.theme.colors.background};
+      text-align: left;
 
       &:hover {
-        box-shadow: 0px 0px 4px 0px ${(props) => props.theme.colors.background};
+        cursor: default;
+        text-decoration: underline;
+        text-decoration-color: ${(props) => props.theme.colors.secondary};
       }
     }
-    #start {
-      margin-right: 10px;
+
+    #forOrg-buttons {
+      text-align: left;
+      margin-top: 2vh;
+      button {
+        cursor: pointer;
+        padding: 16px 40px;
+        font: 600 16px 'Encode Sans Expanded', sans-serif;
+        background-color: ${(props) => props.theme.colors.background};
+        color: ${(props) => props.theme.colors.color};
+        border-radius: 4px;
+        border: none;
+
+        &:hover {
+          box-shadow: 4px 4px 0px #de3dbf;
+        }
+      }
+      #start {
+        margin-right: 1vw;
+      }
     }
   }
 `
@@ -157,34 +169,55 @@ export const ProfessionalCareer = styled.div`
     text-align: center;
   }
 
-  #left {
-    margin-top: 24px;
-    width: 40%;
+  #pentest-content {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10vh;
 
-    .logo {
-      margin: 24px 0px;
+    #left {
+      margin-top: 24px;
+      width: 40%;
+
+      #logo {
+        margin: 24px 0px;
+      }
+
+      p {
+        font: 400 16px 'Encode Sans Expanded', sans-serif;
+        text-align: left;
+      }
+
+      div {
+        margin-top: 20px;
+      }
+
+      a {
+        margin-top: 20px;
+        text-align: left;
+        background-color: ${(props) => props.theme.colors.background};
+        font: 600 16px 'Encode Sans Expanded', sans-serif;
+        color: ${(props) => props.theme.colors.primary};
+        border-radius: 4px;
+        border: none;
+
+        #arrow {
+          margin-left: 10px;
+        }
+      }
     }
 
-    p {
-      font: 400 16px 'Encode Sans Expanded', sans-serif;
-      text-align: left;
-    }
+    #pentest {
+      text-align: center;
+      width: 400px;
+      height: 560px;
+      border-radius: 50px;
+      border: 5px solid #ed1c24;
+      padding: 2vh 2vw;
 
-    div {
-      margin-top: 20px;
-    }
-
-    a {
-      margin-top: 20px;
-      text-align: left;
-      background-color: ${(props) => props.theme.colors.background};
-      font: 600 16px 'Encode Sans Expanded', sans-serif;
-      color: ${(props) => props.theme.colors.primary};
-      border-radius: 4px;
-      border: none;
-
-      #arrow {
-        margin-left: 10px;
+      img {
+        position: relative;
+        z-index: 10;
+        top: -100px;
       }
     }
   }

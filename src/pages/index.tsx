@@ -12,6 +12,9 @@ import ptBR from '../i18n/ptBR'
 import he from '../i18n/he'
 import logo from '../assets/logo.svg'
 import arrowRight from '../assets/arrowRight.svg'
+import forOrg from '../assets/forOrg.svg'
+import pentest from '../assets/pentest.svg'
+
 
 const Home: React.FC = () => {
   const router = useRouter()
@@ -58,6 +61,9 @@ const Home: React.FC = () => {
         </div>
       </Landing>
       <ForOrgs>
+        <div>
+          <img src={forOrg} alt="For orgs sticker" />
+        </div>
         <div id="texts">
           <h1>{lang.expertsOrganizations}</h1>
           <div id="forOrg-buttons">
@@ -67,18 +73,26 @@ const Home: React.FC = () => {
         </div>
       </ForOrgs>
       <ProfessionalCareer>
-        <h1>{lang.expertsOrganizations}</h1>
-        <div id="left">
-          <img className="logo" src={logo} alt="CySource logo" />
-          <p>{lang.careerPathText1}</p>
-          <br />
-          <p>{lang.careerPathText2}</p>
-
-          <div>
-            <a>
-              {lang.discoverPentest}
-              <img id="arrow" src={arrowRight} alt="Arrow right" />
-            </a>
+        <h1>{lang.professionalCareer}</h1>
+        <div id="pentest-content">
+          <div id="left">
+            <img id="logo" src={logo} alt="CySource logo" />
+            <p>{lang.careerPathText1}</p>
+            <br />
+            <p>{lang.careerPathText2}</p>
+            <div>
+              <a>
+                {lang.discoverPentest}
+                <img id="arrow" src={arrowRight} alt="Arrow right" />
+              </a>
+            </div>
+          </div>
+          <div id="pentest">
+            <img src={pentest} alt="" />
+            <div id="card">
+              <h4>Title</h4>
+              <p>It's the full package, consisting of 5 professional courses that address the needs of the industry to engage in the profession of intrusion testing and ethical hacking.</p>
+            </div>
           </div>
         </div>
       </ProfessionalCareer>

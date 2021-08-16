@@ -21,5 +21,6 @@ export default {
     'Our team has instructors of the highest level of preparation, internationally known as Roman Zaikin, Shai Alfasi and Luli Rosenberg and a didactic way of transmitting the content, with real examples of failures discovered in the biggest companies in the world.',
   pentestProfessional: 'Pentest Professional',
   pentest: 'Pentest',
-  discoverPentest: 'Discover our Pentest Career Path'
+  discoverPentest: 'Discover our Pentest Career Path',
+  professionalCareer: 'Professional Career',
 }
