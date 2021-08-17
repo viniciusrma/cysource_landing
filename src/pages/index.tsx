@@ -1,11 +1,14 @@
 import React from 'react'
 import Head from 'next/head'
 import {
+  AdvancedCourses,
   Container,
   ForOrgs,
   Header,
+  InfoAboutCyberSecutity,
   Landing,
-  ProfessionalCareer
+  ProfessionalCareer,
+  SkillsCourses
 } from '../styles/pages/Home'
 import { useRouter } from 'next/dist/client/router'
 import ptBR from '../i18n/ptBR'
@@ -14,7 +17,6 @@ import logo from '../assets/logo.svg'
 import arrowRight from '../assets/arrowRight.svg'
 import forOrg from '../assets/forOrg.svg'
 import pentest from '../assets/pentest.svg'
-
 
 const Home: React.FC = () => {
   const router = useRouter()
@@ -91,11 +93,76 @@ const Home: React.FC = () => {
             <img src={pentest} alt="" />
             <div id="card">
               <h4>Title</h4>
-              <p>It's the full package, consisting of 5 professional courses that address the needs of the industry to engage in the profession of intrusion testing and ethical hacking.</p>
+              <p>{lang.cardDescription}</p>
             </div>
           </div>
         </div>
       </ProfessionalCareer>
+      <InfoAboutCyberSecutity>
+        <div id="left">
+          <img src={pentest} alt="" />
+        </div>
+        <div id="right">
+          <h1>{lang.doYouHaveQuestions}</h1>
+          <div>
+            <button>{lang.moreInfo}</button>
+          </div>
+        </div>
+      </InfoAboutCyberSecutity>
+      <SkillsCourses>
+        <h1>{lang.skillsCourses}</h1>
+        <div>
+          <div className="row">
+            <div id="skill">
+              <img src={pentest} alt="" />
+              <div id="card">
+                <h4>Title</h4>
+                <p>{lang.cardDescription}</p>
+              </div>
+            </div>
+            <div id="skill">
+              <img src={pentest} alt="" />
+              <div id="card">
+                <h4>Title</h4>
+                <p>{lang.cardDescription}</p>
+              </div>
+            </div>
+            <div id="skill">
+              <img src={pentest} alt="" />
+              <div id="card">
+                <h4>Title</h4>
+                <p>{lang.cardDescription}</p>
+              </div>
+            </div>
+          </div>
+          <div className="row">
+            <div id="skill">
+              <img src={pentest} alt="" />
+              <div id="card">
+                <h4>Title</h4>
+                <p>{lang.cardDescription}</p>
+              </div>
+            </div>
+            <div id="skill">
+              <img src={pentest} alt="" />
+              <div id="card">
+                <h4>Title</h4>
+                <p>{lang.cardDescription}</p>
+              </div>
+            </div>
+            <div id="skill">
+              <img src={pentest} alt="" />
+              <div id="card">
+                <h4>Title</h4>
+                <p>{lang.cardDescription}</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </SkillsCourses>
+      <AdvancedCourses>
+        <h1>{lang.advancedCourses}</h1>
+      </AdvancedCourses>
     </Container>
   )
 }

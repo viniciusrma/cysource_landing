@@ -23,4 +23,11 @@ export default {
   pentest: 'Pentest',
   discoverPentest: 'Discover our Pentest Career Path',
   professionalCareer: 'Professional Career',
+  skillsCourses: 'Skills courses',
+  advancedCourses: 'Advances courses',
+  moreInfo: 'I want to know more about cybersecurity',
+  doYouHaveQuestions:
+    "Do you still have questions or don't know the area of ​​cybersecurity?",
+  cardDescription:
+    "It's the full package, consisting of 5 professional courses that address the needs of the industry to engage in the profession of intrusion testing and ethical hacking."
 }

@@ -46,6 +46,7 @@ export const Landing = styled.div`
   padding: 10vh 20vw;
 
   background-image: url(${mainBackground});
+  background-color: ${(props) => props.theme.colors.background} !important;
   background-position: bottom right;
   background-repeat: no-repeat;
   background-size: 50%;
@@ -82,7 +83,7 @@ export const Landing = styled.div`
         border: none;
 
         &:hover {
-          box-shadow: 4px 4px 0px #de3dbf;
+          box-shadow: 0px 0px 4px 4px #a630b0;
         }
       }
       #start {
@@ -118,6 +119,18 @@ export const ForOrgs = styled.div`
     #575d97 100%
   );
 
+  @media only screen and (max-width: 1500px) {
+    padding: 10vh 12vw;
+  }
+
+  @media only screen and (max-width: 1150px) {
+    padding: 10vh 8vw;
+  }
+
+  @media only screen and (max-width: 1000px) {
+    padding: 10vh 6vw;
+  }
+
   #texts {
     margin-top: 4vh;
     margin-left: 2vw;
@@ -147,7 +160,7 @@ export const ForOrgs = styled.div`
         border: none;
 
         &:hover {
-          box-shadow: 4px 4px 0px #de3dbf;
+          box-shadow: 0px 0px 4px 4px #a630b0;
         }
       }
       #start {
@@ -161,7 +174,7 @@ export const ProfessionalCareer = styled.div`
   width: 100%;
   display: flex;
   flex-direction: column;
-  padding: 10vh 20vw;
+  padding: 7vh 18vw;
   background-color: ${(props) => props.theme.colors.background};
   text-align: left;
 
@@ -221,4 +234,88 @@ export const ProfessionalCareer = styled.div`
       }
     }
   }
+`
+
+export const InfoAboutCyberSecutity = styled.div`
+  width: 100%;
+  display: flex;
+  padding: 7vh 18vw;
+  background-color: ${(props) => props.theme.colors.primary};
+  color: ${(props) => props.theme.colors.background};
+  text-align: left;
+  justify-content: space-around;
+
+  #left,
+  #right {
+    width: 40%;
+  }
+
+  h1 {
+    margin-bottom: 2vh;
+  }
+
+  button {
+    cursor: pointer;
+    padding: 2vh 2vw;
+    font: 600 16px 'Encode Sans Expanded', sans-serif;
+    background-color: ${(props) => props.theme.colors.background};
+    color: ${(props) => props.theme.colors.color};
+    border-radius: 4px;
+    border: none;
+
+    &:hover {
+      box-shadow: 0px 0px 4px 4px #a630b0;
+    }
+  }
+`
+
+export const SkillsCourses = styled.div`
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 7vh 18vw;
+  background-color: ${(props) => props.theme.colors.background};
+  text-align: left;
+
+  h1 {
+    text-align: center;
+    margin-bottom: 10vh;
+  }
+
+  .row {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 10vh;
+
+    #skill {
+      text-align: center;
+      width: 320px;
+      height: 512px;
+      border-radius: 50px;
+      border: 5px solid #ed1c24;
+      padding: 2vh 2vw;
+      margin: 1vh;
+
+      img {
+        position: relative;
+        z-index: 10;
+        top: -100px;
+      }
+    }
+  }
+`
+
+export const AdvancedCourses = styled.div`
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 7vh 18vw;
+  background-color: ${(props) => props.theme.colors.background};
+  text-align: left;
+
+  h1 {
+    text-align: center;
+    margin-bottom: 10vh;
+  }
+
 `

@@ -1,4 +1,4 @@
-import  {createGlobalStyle} from "styled-components"
+import { createGlobalStyle } from 'styled-components'
 
 export default createGlobalStyle`
   * {
@@ -8,8 +8,8 @@ export default createGlobalStyle`
   }
 
   body {
-    background: ${props => props.theme.colors.background };
-    color: ${props => props.theme.colors.color };
+    background: ${(props) => props.theme.colors.background};
+    color: ${(props) => props.theme.colors.color};
     font: 400 16px 'Encode Sans Expanded', sans-serif;
   }
 `
