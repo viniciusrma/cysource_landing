@@ -94,7 +94,7 @@ const Home: React.FC = () => {
           <div id="pentest">
             <img src={pentest} alt="" className="main" />
             <div id="card">
-              <h4>Title</h4>
+              <h1>Title</h1>
               <div id="info">
                 <img src={skill_level} alt="" /> <p>Beginner</p>
                 <img src={schedule} alt="" /> <p>40 hours</p>
@@ -111,8 +111,18 @@ const Home: React.FC = () => {
           <div id="forensics-full">
             <img src={pentest} alt="" className="main" />
             <div id="card">
-              <h4>Title</h4>
+              <h1>Title</h1>
+              <div id="info">
+                <img src={skill_level} alt="" /> <p>Beginner</p>
+                <img src={schedule} alt="" /> <p>40 hours</p>
+              </div>
               <p>{lang.cardDescription}</p>
+              <div id="actions">
+                <button id="details">More details</button>
+                <button id="getit">Get it now</button>
+              </div>
+              <p>Coordinator: Roman Zaikin</p>
+              <p>Coordinator: Luli Rosenberg</p>
             </div>
           </div>
         </div>
@@ -133,47 +143,107 @@ const Home: React.FC = () => {
         <div>
           <div className="row">
             <div id="skill">
-              <img src={pentest} alt="" />
+              <img src={pentest} alt="" className="main" />
               <div id="card">
-                <h4>Title</h4>
+                <h1>Title</h1>
+                <div id="info">
+                  <img src={skill_level} alt="" /> <p>Beginner</p>
+                  <img src={schedule} alt="" /> <p>40 hours</p>
+                </div>
                 <p>{lang.cardDescription}</p>
+                <div id="actions">
+                  <button id="details">More details</button>
+                  <button id="getit">Get it now</button>
+                </div>
+                <p>Coordinator: Roman Zaikin</p>
+                <p>Coordinator: Luli Rosenberg</p>
               </div>
             </div>
             <div id="skill">
-              <img src={pentest} alt="" />
+              <img src={pentest} alt="" className="main" />
               <div id="card">
-                <h4>Title</h4>
+                <h1>Title</h1>
+                <div id="info">
+                  <img src={skill_level} alt="" /> <p>Beginner</p>
+                  <img src={schedule} alt="" /> <p>40 hours</p>
+                </div>
                 <p>{lang.cardDescription}</p>
+                <div id="actions">
+                  <button id="details">More details</button>
+                  <button id="getit">Get it now</button>
+                </div>
+                <p>Coordinator: Roman Zaikin</p>
+                <p>Coordinator: Luli Rosenberg</p>
               </div>
             </div>
             <div id="skill">
-              <img src={pentest} alt="" />
+              <img src={pentest} alt="" className="main" />
               <div id="card">
-                <h4>Title</h4>
+                <h1>Title</h1>
+                <div id="info">
+                  <img src={skill_level} alt="" /> <p>Beginner</p>
+                  <img src={schedule} alt="" /> <p>40 hours</p>
+                </div>
                 <p>{lang.cardDescription}</p>
+                <div id="actions">
+                  <button id="details">More details</button>
+                  <button id="getit">Get it now</button>
+                </div>
+                <p>Coordinator: Roman Zaikin</p>
+                <p>Coordinator: Luli Rosenberg</p>
               </div>
             </div>
           </div>
           <div className="second-row">
             <div id="skill">
-              <img src={pentest} alt="" />
+              <img src={pentest} alt="" className="main" />
               <div id="card">
-                <h4>Title</h4>
+                <h1>Title</h1>
+                <div id="info">
+                  <img src={skill_level} alt="" /> <p>Beginner</p>
+                  <img src={schedule} alt="" /> <p>40 hours</p>
+                </div>
                 <p>{lang.cardDescription}</p>
+                <div id="actions">
+                  <button id="details">More details</button>
+                  <button id="getit">Get it now</button>
+                </div>
+                <p>Coordinator: Roman Zaikin</p>
+                <p>Coordinator: Luli Rosenberg</p>
               </div>
             </div>
             <div id="skill">
-              <img src={pentest} alt="" />
+              <img src={pentest} alt="" className="main" />
               <div id="card">
-                <h4>Title</h4>
+                <h1>Title</h1>
+                <div id="info">
+                  <img src={skill_level} alt="" /> <p>Beginner</p>
+                  <img src={schedule} alt="" /> <p>40 hours</p>
+                </div>
                 <p>{lang.cardDescription}</p>
+                <div id="actions">
+                  <button id="details">More details</button>
+                  <button id="getit">Get it now</button>
+                </div>
+                <p>Coordinator: Roman Zaikin</p>
+                <p>Coordinator: Luli Rosenberg</p>
               </div>
             </div>
             <div id="skill">
-              <img src={pentest} alt="" />
+              <img src={pentest} alt="" className="main" />
               <div id="card">
-                <h4>Title</h4>
+                <h1>Title</h1>
+                <div id="info">
+                  <img src={skill_level} alt="" /> <p>Beginner</p>
+                  <img src={schedule} alt="" /> <p>40 hours</p>
+                </div>
                 <p>{lang.cardDescription}</p>
+                <div id="actions">
+                  <button id="details">More details</button>
+                  <button id="getit">Get it now</button>
+                </div>
+                <p>Coordinator: Roman Zaikin</p>
+                <p>Coordinator: Luli Rosenberg</p>
               </div>
             </div>
           </div>

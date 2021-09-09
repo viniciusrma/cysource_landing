@@ -226,7 +226,7 @@ export const ProfessionalCareer = styled.div`
       height: 560px;
       border-radius: 50px;
       border: 5px solid #ed1c24;
-      padding: 1vh 2vw;
+      padding: 1vh 1.5vw;
 
       .main {
         position: relative;
@@ -236,22 +236,29 @@ export const ProfessionalCareer = styled.div`
 
       #card {
         text-align: left;
+        top: -100px;
+        position: relative;
+
+        h1 {
+          text-align: left;
+        }
 
         #info {
           display: flex;
           margin: 16px 0px;
-          img, p {
+          img,
+          p {
             margin-right: 10px;
           }
         }
 
         #actions {
-          margin: 16px 0px;
+          margin: 16px 0px 40px 0px;
           justify-content: space-around;
           display: flex;
           button {
             justify-content: center;
-            width: 5.5vw;
+            width: 5.7vw;
             height: 4vh;
             background-color: ${(props) => props.theme.colors.contrast};
             border-radius: 4px;
@@ -321,18 +328,63 @@ export const SkillsCourses = styled.div`
     justify-content: space-around;
 
     #skill {
-      text-align: center;
       width: 320px;
       height: 512px;
       border-radius: 50px;
       border: 5px solid #ed1c24;
-      padding: 2vh 2vw;
       margin: 1vh;
+      text-align: center;
+      padding: 1vh 1.5vw;
+
+      .main {
+        position: relative;
+        z-index: 10;
+        top: -100px;
+      }
 
       img {
         position: relative;
         z-index: 10;
         top: -100px;
+      }
+
+      #card {
+        text-align: left;
+        top: -100px;
+        position: relative;
+
+        h1 {
+          text-align: left;
+        }
+
+        #info {
+          display: flex;
+          margin: 16px 0px;
+          img,
+          p {
+            margin-right: 4px;
+          }
+        }
+
+        #actions {
+          margin: 16px 0px 40px 0px;
+          justify-content: space-around;
+          display: flex;
+          button {
+            justify-content: center;
+            width: 5.7vw;
+            height: 4vh;
+            background-color: ${(props) => props.theme.colors.contrast};
+            border-radius: 4px;
+            border: none;
+            font: 600 16px 'Encode Sans Expanded', sans-serif;
+            color: ${(props) => props.theme.colors.color};
+
+            &:hover {
+              background-color: rgba(58, 203, 140, 0.2);
+            }
+          }
+        }
       }
     }
   }
