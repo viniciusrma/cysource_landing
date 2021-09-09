@@ -189,7 +189,7 @@ export const ProfessionalCareer = styled.div`
 
     #left {
       margin-top: 24px;
-      width: 40%;
+      width: 30%;
 
       #logo {
         margin: 24px 0px;
@@ -219,18 +219,51 @@ export const ProfessionalCareer = styled.div`
       }
     }
 
-    #pentest {
+    #pentest,
+    #forensics-full {
       text-align: center;
       width: 400px;
       height: 560px;
       border-radius: 50px;
       border: 5px solid #ed1c24;
-      padding: 2vh 2vw;
+      padding: 1vh 2vw;
 
-      img {
+      .main {
         position: relative;
         z-index: 10;
         top: -100px;
+      }
+
+      #card {
+        text-align: left;
+
+        #info {
+          display: flex;
+          margin: 16px 0px;
+          img, p {
+            margin-right: 10px;
+          }
+        }
+
+        #actions {
+          margin: 16px 0px;
+          justify-content: space-around;
+          display: flex;
+          button {
+            justify-content: center;
+            width: 5.5vw;
+            height: 4vh;
+            background-color: ${(props) => props.theme.colors.contrast};
+            border-radius: 4px;
+            border: none;
+            font: 600 16px 'Encode Sans Expanded', sans-serif;
+            color: ${(props) => props.theme.colors.color};
+
+            &:hover {
+              background-color: rgba(58, 203, 140, 0.2);
+            }
+          }
+        }
       }
     }
   }
@@ -282,10 +315,10 @@ export const SkillsCourses = styled.div`
     margin-bottom: 10vh;
   }
 
-  .row {
+  .row,
+  .second-row {
     display: flex;
     justify-content: space-around;
-    margin-bottom: 10vh;
 
     #skill {
       text-align: center;
@@ -303,6 +336,10 @@ export const SkillsCourses = styled.div`
       }
     }
   }
+
+  .row {
+    margin-bottom: 10vh;
+  }
 `
 
 export const AdvancedCourses = styled.div`
@@ -317,5 +354,4 @@ export const AdvancedCourses = styled.div`
     text-align: center;
     margin-bottom: 10vh;
   }
-
 `

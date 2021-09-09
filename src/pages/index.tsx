@@ -17,6 +17,8 @@ import logo from '../assets/logo.svg'
 import arrowRight from '../assets/arrowRight.svg'
 import forOrg from '../assets/forOrg.svg'
 import pentest from '../assets/pentest.svg'
+import skill_level from '../assets/skill-level.svg'
+import schedule from '../assets/schedule.svg'
 
 const Home: React.FC = () => {
   const router = useRouter()
@@ -90,7 +92,24 @@ const Home: React.FC = () => {
             </div>
           </div>
           <div id="pentest">
-            <img src={pentest} alt="" />
+            <img src={pentest} alt="" className="main" />
+            <div id="card">
+              <h4>Title</h4>
+              <div id="info">
+                <img src={skill_level} alt="" /> <p>Beginner</p>
+                <img src={schedule} alt="" /> <p>40 hours</p>
+              </div>
+              <p>{lang.cardDescription}</p>
+              <div id="actions">
+                <button id="details">More details</button>
+                <button id="getit">Get it now</button>
+              </div>
+              <p>Coordinator: Roman Zaikin</p>
+              <p>Coordinator: Luli Rosenberg</p>
+            </div>
+          </div>
+          <div id="forensics-full">
+            <img src={pentest} alt="" className="main" />
             <div id="card">
               <h4>Title</h4>
               <p>{lang.cardDescription}</p>
@@ -135,7 +154,7 @@ const Home: React.FC = () => {
               </div>
             </div>
           </div>
-          <div className="row">
+          <div className="second-row">
             <div id="skill">
               <img src={pentest} alt="" />
               <div id="card">
