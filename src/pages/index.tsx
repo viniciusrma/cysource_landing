@@ -96,16 +96,16 @@ const Home: React.FC = () => {
             <div id="card">
               <h1>Title</h1>
               <div id="info">
-                <img src={skill_level} alt="" /> <p>Beginner</p>
-                <img src={schedule} alt="" /> <p>40 hours</p>
+                <img src={skill_level} alt="" /> <p>{lang.beginner}</p>
+                <img src={schedule} alt="" /> <p>{lang.fourtyHour}</p>
               </div>
               <p>{lang.cardDescription}</p>
               <div id="actions">
-                <button id="details">More details</button>
-                <button id="getit">Get it now</button>
+                <button id="details">{lang.moreDetails}</button>
+                <button id="getit">{lang.getItNow}</button>
               </div>
-              <p>Coordinator: Roman Zaikin</p>
-              <p>Coordinator: Luli Rosenberg</p>
+              <p>{lang.coordinator}</p>
+              <p>{lang.instructor}</p>
             </div>
           </div>
           <div id="forensics-full">
@@ -113,16 +113,16 @@ const Home: React.FC = () => {
             <div id="card">
               <h1>Title</h1>
               <div id="info">
-                <img src={skill_level} alt="" /> <p>Beginner</p>
-                <img src={schedule} alt="" /> <p>40 hours</p>
+                <img src={skill_level} alt="" /> <p>{lang.beginner}</p>
+                <img src={schedule} alt="" /> <p>{lang.fourtyHour}</p>
               </div>
               <p>{lang.cardDescription}</p>
               <div id="actions">
-                <button id="details">More details</button>
-                <button id="getit">Get it now</button>
+                <button id="details">{lang.moreDetails}</button>
+                <button id="getit">{lang.getItNow}</button>
               </div>
-              <p>Coordinator: Roman Zaikin</p>
-              <p>Coordinator: Luli Rosenberg</p>
+              <p>{lang.coordinator}</p>
+              <p>{lang.instructor}</p>
             </div>
           </div>
         </div>
@@ -147,16 +147,16 @@ const Home: React.FC = () => {
               <div id="card">
                 <h1>Title</h1>
                 <div id="info">
-                  <img src={skill_level} alt="" /> <p>Beginner</p>
-                  <img src={schedule} alt="" /> <p>40 hours</p>
+                  <img src={skill_level} alt="" /> <p>{lang.beginner}</p>
+                  <img src={schedule} alt="" /> <p>{lang.fourtyHour}</p>
                 </div>
                 <p>{lang.cardDescription}</p>
                 <div id="actions">
-                  <button id="details">More details</button>
-                  <button id="getit">Get it now</button>
+                  <button id="details">{lang.moreDetails}</button>
+                  <button id="getit">{lang.getItNow}</button>
                 </div>
-                <p>Coordinator: Roman Zaikin</p>
-                <p>Coordinator: Luli Rosenberg</p>
+                <p>{lang.coordinator}</p>
+                <p>{lang.instructor}</p>
               </div>
             </div>
             <div id="skill">
@@ -164,16 +164,16 @@ const Home: React.FC = () => {
               <div id="card">
                 <h1>Title</h1>
                 <div id="info">
-                  <img src={skill_level} alt="" /> <p>Beginner</p>
-                  <img src={schedule} alt="" /> <p>40 hours</p>
+                  <img src={skill_level} alt="" /> <p>{lang.beginner}</p>
+                  <img src={schedule} alt="" /> <p>{lang.fourtyHour}</p>
                 </div>
                 <p>{lang.cardDescription}</p>
                 <div id="actions">
-                  <button id="details">More details</button>
-                  <button id="getit">Get it now</button>
+                  <button id="details">{lang.moreDetails}</button>
+                  <button id="getit">{lang.getItNow}</button>
                 </div>
-                <p>Coordinator: Roman Zaikin</p>
-                <p>Coordinator: Luli Rosenberg</p>
+                <p>{lang.coordinator}</p>
+                <p>{lang.instructor}</p>
               </div>
             </div>
             <div id="skill">
@@ -181,16 +181,16 @@ const Home: React.FC = () => {
               <div id="card">
                 <h1>Title</h1>
                 <div id="info">
-                  <img src={skill_level} alt="" /> <p>Beginner</p>
-                  <img src={schedule} alt="" /> <p>40 hours</p>
+                  <img src={skill_level} alt="" /> <p>{lang.beginner}</p>
+                  <img src={schedule} alt="" /> <p>{lang.fourtyHour}</p>
                 </div>
                 <p>{lang.cardDescription}</p>
                 <div id="actions">
-                  <button id="details">More details</button>
-                  <button id="getit">Get it now</button>
+                  <button id="details">{lang.moreDetails}</button>
+                  <button id="getit">{lang.getItNow}</button>
                 </div>
-                <p>Coordinator: Roman Zaikin</p>
-                <p>Coordinator: Luli Rosenberg</p>
+                <p>{lang.coordinator}</p>
+                <p>{lang.instructor}</p>
               </div>
             </div>
           </div>
@@ -200,16 +200,16 @@ const Home: React.FC = () => {
               <div id="card">
                 <h1>Title</h1>
                 <div id="info">
-                  <img src={skill_level} alt="" /> <p>Beginner</p>
-                  <img src={schedule} alt="" /> <p>40 hours</p>
+                  <img src={skill_level} alt="" /> <p>{lang.beginner}</p>
+                  <img src={schedule} alt="" /> <p>{lang.fourtyHour}</p>
                 </div>
                 <p>{lang.cardDescription}</p>
                 <div id="actions">
-                  <button id="details">More details</button>
-                  <button id="getit">Get it now</button>
+                  <button id="details">{lang.moreDetails}</button>
+                  <button id="getit">{lang.getItNow}</button>
                 </div>
-                <p>Coordinator: Roman Zaikin</p>
-                <p>Coordinator: Luli Rosenberg</p>
+                <p>{lang.coordinator}</p>
+                <p>{lang.instructor}</p>
               </div>
             </div>
             <div id="skill">
@@ -217,16 +217,16 @@ const Home: React.FC = () => {
               <div id="card">
                 <h1>Title</h1>
                 <div id="info">
-                  <img src={skill_level} alt="" /> <p>Beginner</p>
-                  <img src={schedule} alt="" /> <p>40 hours</p>
+                  <img src={skill_level} alt="" /> <p>{lang.beginner}</p>
+                  <img src={schedule} alt="" /> <p>{lang.fourtyHour}</p>
                 </div>
                 <p>{lang.cardDescription}</p>
                 <div id="actions">
-                  <button id="details">More details</button>
-                  <button id="getit">Get it now</button>
+                  <button id="details">{lang.moreDetails}</button>
+                  <button id="getit">{lang.getItNow}</button>
                 </div>
-                <p>Coordinator: Roman Zaikin</p>
-                <p>Coordinator: Luli Rosenberg</p>
+                <p>{lang.coordinator}</p>
+                <p>{lang.instructor}</p>
               </div>
             </div>
             <div id="skill">
@@ -234,23 +234,50 @@ const Home: React.FC = () => {
               <div id="card">
                 <h1 className="title">Title</h1>
                 <div id="info">
-                  <img src={skill_level} alt="" /> <p>Beginner</p>
-                  <img src={schedule} alt="" /> <p>40 hours</p>
+                  <img src={skill_level} alt="" /> <p>{lang.beginner}</p>
+                  <img src={schedule} alt="" /> <p>{lang.fourtyHour}</p>
                 </div>
                 <p>{lang.cardDescription}</p>
                 <div id="actions">
-                  <button id="details">More details</button>
-                  <button id="getit">Get it now</button>
+                  <button id="details">{lang.moreDetails}</button>
+                  <button id="getit">{lang.getItNow}</button>
                 </div>
-                <p>Coordinator: Roman Zaikin</p>
-                <p>Coordinator: Luli Rosenberg</p>
+                <p>{lang.coordinator}</p>
+                <p>{lang.instructor}</p>
               </div>
             </div>
           </div>
         </div>
       </SkillsCourses>
       <AdvancedCourses>
-        <h1>{lang.advancedCourses}</h1>
+        <h1 className="advanced-title">{lang.advancedCourses}</h1>
+        <h4>
+          Advanced research courses (for hacking and programming connoisseurs).
+        </h4>
+        <div className="container">
+          <div id="left">
+            <div id="malware-analysis">
+              <img src={pentest} alt="" className="main" />
+              <div id="card">
+                <h1>Title</h1>
+                <div id="info">
+                  <img src={skill_level} alt="" /> <p>{lang.beginner}</p>
+                  <img src={schedule} alt="" /> <p>{lang.fourtyHour}</p>
+                </div>
+                <p>{lang.cardDescription}</p>
+                <div id="actions">
+                  <button id="details">{lang.moreDetails}</button>
+                  <button id="getit">{lang.getItNow}</button>
+                </div>
+                <p>{lang.coordinator}</p>
+                <p>{lang.instructor}</p>
+              </div>
+            </div>
+          </div>
+          <div id="right">
+            <h1> New courses comming soon... </h1>
+          </div>
+        </div>
       </AdvancedCourses>
     </Container>
   )

@@ -29,5 +29,11 @@ export default {
   doYouHaveQuestions:
     "Do you still have questions or don't know the area of ​​cybersecurity?",
   cardDescription:
-    "It's the full package, consisting of 5 professional courses that address the needs of the industry to engage in the profession of intrusion testing and ethical hacking."
+    "It's the full package, consisting of 5 professional courses that address the needs of the industry to engage in the profession of intrusion testing and ethical hacking.",
+  moreDetails: 'More Details',
+  getItNow: 'Get it now',
+  beginner: 'Beginner',
+  coordinator: 'Coordinator: Roman Zaikin',
+  instructor: 'Instructor: Luli Rosenberg',
+  fourtyHour: '40 hours'
 }
