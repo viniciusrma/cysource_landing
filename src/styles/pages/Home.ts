@@ -317,7 +317,7 @@ export const SkillsCourses = styled.div`
   background-color: ${(props) => props.theme.colors.background};
   text-align: left;
 
-  h1 {
+  .skills-title {
     text-align: center;
     margin-bottom: 10vh;
   }
@@ -334,7 +334,7 @@ export const SkillsCourses = styled.div`
       border: 5px solid #ed1c24;
       margin: 1vh;
       text-align: center;
-      padding: 1vh 1.5vw;
+      padding: 1vh 1vw;
 
       .main {
         position: relative;
@@ -342,7 +342,7 @@ export const SkillsCourses = styled.div`
         top: -100px;
       }
 
-      img {
+      .main {
         position: relative;
         z-index: 10;
         top: -100px;
@@ -372,12 +372,12 @@ export const SkillsCourses = styled.div`
           display: flex;
           button {
             justify-content: center;
-            width: 5.7vw;
+            width: 5vw;
             height: 4vh;
             background-color: ${(props) => props.theme.colors.contrast};
             border-radius: 4px;
             border: none;
-            font: 600 16px 'Encode Sans Expanded', sans-serif;
+            font: 500 16px 'Encode Sans Expanded', sans-serif;
             color: ${(props) => props.theme.colors.color};
 
             &:hover {

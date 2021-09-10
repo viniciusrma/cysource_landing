@@ -139,7 +139,7 @@ const Home: React.FC = () => {
         </div>
       </InfoAboutCyberSecutity>
       <SkillsCourses>
-        <h1>{lang.skillsCourses}</h1>
+        <h1 className="skills-title">{lang.skillsCourses}</h1>
         <div>
           <div className="row">
             <div id="skill">
@@ -232,7 +232,7 @@ const Home: React.FC = () => {
             <div id="skill">
               <img src={pentest} alt="" className="main" />
               <div id="card">
-                <h1>Title</h1>
+                <h1 className="title">Title</h1>
                 <div id="info">
                   <img src={skill_level} alt="" /> <p>Beginner</p>
                   <img src={schedule} alt="" /> <p>40 hours</p>
