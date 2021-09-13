@@ -491,4 +491,8 @@ export const CompaniesCarousel = styled.div`
   h1 {
     text-align: center;
   }
+
+  .company {
+    height: 25vh;
+  }
 `

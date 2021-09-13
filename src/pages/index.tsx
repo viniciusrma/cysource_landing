@@ -282,7 +282,11 @@ const Home: React.FC = () => {
       </AdvancedCourses>
       <CompaniesCarousel>
         <h1>{lang.companiesCarouselTitle}</h1>
-        <h1>{lang.companiesCarouselTitle}</h1>
+        <div>
+          <div className="company">
+            <h1>Some content</h1>
+          </div>
+        </div>
       </CompaniesCarousel>
     </Container>
   )
