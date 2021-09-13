@@ -25,6 +25,7 @@ export default {
   professionalCareer: 'Professional Career',
   skillsCourses: 'Skills courses',
   advancedCourses: 'Advances courses',
+  companiesCarouselTitle: 'Companies that have entrusted us with their cyber security',
   moreInfo: 'I want to know more about cybersecurity',
   doYouHaveQuestions:
     "Do you still have questions or don't know the area of ​​cybersecurity?",

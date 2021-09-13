@@ -2,6 +2,7 @@ import React from 'react'
 import Head from 'next/head'
 import {
   AdvancedCourses,
+  CompaniesCarousel,
   Container,
   ForOrgs,
   Header,
@@ -279,6 +280,10 @@ const Home: React.FC = () => {
           </div>
         </div>
       </AdvancedCourses>
+      <CompaniesCarousel>
+        <h1>{lang.companiesCarouselTitle}</h1>
+        <h1>{lang.companiesCarouselTitle}</h1>
+      </CompaniesCarousel>
     </Container>
   )
 }

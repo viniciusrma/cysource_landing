@@ -479,3 +479,16 @@ export const AdvancedCourses = styled.div`
     align-items: center;
   }
 `
+
+export const CompaniesCarousel = styled.div`
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 5vh 20vw;
+  background-color: ${(props) => props.theme.colors.secondary};
+  text-align: left;
+
+  h1 {
+    text-align: center;
+  }
+`
