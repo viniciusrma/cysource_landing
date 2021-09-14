@@ -4,7 +4,7 @@ const theme = {
     color: '#F9F9F9',
     primary: '#3ACB8C',
     secondary: '#DE3DBF',
-    contrast: '#0E1C22',
+    contrast: '#0E1C22'
   }
 }
 

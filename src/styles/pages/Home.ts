@@ -488,11 +488,45 @@ export const CompaniesCarousel = styled.div`
   background-color: ${(props) => props.theme.colors.secondary};
   text-align: left;
 
-  h1 {
-    text-align: center;
-  }
+  .carousel {
 
-  .company {
-    height: 25vh;
+    h1 {
+      text-align: center;
+      margin-bottom: 5vh;
+    }
+
+    #cards-section{
+      display: flex;
+      flex-direction: row;
+    }
+
+    .company {
+      background-color: ${(props) => props.theme.colors.color};
+      color: ${(props) => props.theme.colors.background};
+      height: 330px;
+      width: 280px;
+      border-radius: 8px;
+      padding: 4vh 1vw 2vh 1vw;
+      text-align: center;
+      font-size: 14px;
+      margin-right: 2vw;
+
+      #top {
+        margin-bottom: 1.8vh;
+
+        img {
+          margin-bottom: 1.8vh;
+        }
+      }
+
+      #bottom {
+        display: flex;
+        flex-direction: column;
+
+        a {
+          margin-bottom: 0.8vh;
+        }
+      }
+    }
   }
 `

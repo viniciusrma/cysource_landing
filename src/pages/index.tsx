@@ -20,6 +20,18 @@ import forOrg from '../assets/forOrg.svg'
 import pentest from '../assets/pentest.svg'
 import skill_level from '../assets/skill-level.svg'
 import schedule from '../assets/schedule.svg'
+import facebook from '../assets/facebook.svg'
+import amazon from '../assets/amazon.svg'
+import tiktok from '../assets/tiktok.svg'
+import lg from '../assets/lg.svg'
+import dji from '../assets/dji.svg'
+import whatsapp from '../assets/whatsapp.svg'
+import paypal from '../assets/paypal.svg'
+import aliexpress from '../assets/aliexpress.svg'
+import ebay from '../assets/ebay.svg'
+import snapchat from '../assets/snapchat.svg'
+import telegram from '../assets/telegram.svg'
+
 
 const Home: React.FC = () => {
   const router = useRouter()
@@ -281,10 +293,141 @@ const Home: React.FC = () => {
         </div>
       </AdvancedCourses>
       <CompaniesCarousel>
-        <h1>{lang.companiesCarouselTitle}</h1>
-        <div>
-          <div className="company">
-            <h1>Some content</h1>
+        <div className="carousel">
+          <h1>{lang.companiesCarouselTitle}</h1>
+          <div id="cards-section">
+            <div className="company">
+              <div id="top">
+                <img src={facebook} alt="facebook logo" />
+                <p>Handling messages on facebook</p>
+              </div>
+              <div id="bottom">
+                <a href="">Our Research</a>
+                <a href="">Canaltech</a>
+                <a href="">ComputerWorld</a>
+                <a href="">PCWorld</a>
+              </div>
+            </div>
+            <div className="company">
+              <div id="top">
+                <img src={amazon} alt="facebook logo" />
+                <p>Handling messages on facebook</p>
+              </div>
+              <div id="bottom">
+                <a href="">Our Research</a>
+                <a href="">Canaltech</a>
+                <a href="">ComputerWorld</a>
+                <a href="">PCWorld</a>
+              </div>
+            </div>
+            <div className="company">
+              <div id="top">
+                <img src={tiktok} alt="facebook logo" />
+                <p>Handling messages on facebook</p>
+              </div>
+              <div id="bottom">
+                <a href="">Our Research</a>
+                <a href="">Canaltech</a>
+                <a href="">ComputerWorld</a>
+                <a href="">PCWorld</a>
+              </div>
+            </div>
+            <div className="company">
+              <div id="top">
+                <img src={lg} alt="facebook logo" />
+                <p>Handling messages on facebook</p>
+              </div>
+              <div id="bottom">
+                <a href="">Our Research</a>
+                <a href="">Canaltech</a>
+                <a href="">ComputerWorld</a>
+                <a href="">PCWorld</a>
+              </div>
+            </div>
+            <div className="company">
+              <div id="top">
+                <img src={dji} alt="facebook logo" />
+                <p>Handling messages on facebook</p>
+              </div>
+              <div id="bottom">
+                <a href="">Our Research</a>
+                <a href="">Canaltech</a>
+                <a href="">ComputerWorld</a>
+                <a href="">PCWorld</a>
+              </div>
+            </div>
+            <div className="company">
+              <div id="top">
+                <img src={whatsapp} alt="facebook logo" />
+                <p>Handling messages on facebook</p>
+              </div>
+              <div id="bottom">
+                <a href="">Our Research</a>
+                <a href="">Canaltech</a>
+                <a href="">ComputerWorld</a>
+                <a href="">PCWorld</a>
+              </div>
+            </div>
+            <div className="company">
+              <div id="top">
+                <img src={paypal} alt="facebook logo" />
+                <p>Handling messages on facebook</p>
+              </div>
+              <div id="bottom">
+                <a href="">Our Research</a>
+                <a href="">Canaltech</a>
+                <a href="">ComputerWorld</a>
+                <a href="">PCWorld</a>
+              </div>
+            </div>
+            <div className="company">
+              <div id="top">
+                <img src={aliexpress} alt="facebook logo" />
+                <p>Handling messages on facebook</p>
+              </div>
+              <div id="bottom">
+                <a href="">Our Research</a>
+                <a href="">Canaltech</a>
+                <a href="">ComputerWorld</a>
+                <a href="">PCWorld</a>
+              </div>
+            </div>
+            <div className="company">
+              <div id="top">
+                <img src={ebay} alt="facebook logo" />
+                <p>Handling messages on facebook</p>
+              </div>
+              <div id="bottom">
+                <a href="">Our Research</a>
+                <a href="">Canaltech</a>
+                <a href="">ComputerWorld</a>
+                <a href="">PCWorld</a>
+              </div>
+            </div>
+            <div className="company">
+              <div id="top">
+                <img src={snapchat} alt="facebook logo" />
+                <p>Handling messages on facebook</p>
+              </div>
+              <div id="bottom">
+                <a href="">Our Research</a>
+                <a href="">Canaltech</a>
+                <a href="">ComputerWorld</a>
+                <a href="">PCWorld</a>
+              </div>
+            </div>
+            <div className="company">
+              <div id="top">
+                <img src={telegram} alt="facebook logo" />
+                <p>Handling messages on facebook</p>
+              </div>
+              <div id="bottom">
+                <a href="">Our Research</a>
+                <a href="">Canaltech</a>
+                <a href="">ComputerWorld</a>
+                <a href="">PCWorld</a>
+              </div>
+            </div>
           </div>
         </div>
       </CompaniesCarousel>
