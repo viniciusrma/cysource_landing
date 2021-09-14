@@ -32,7 +32,6 @@ import ebay from '../assets/ebay.svg'
 import snapchat from '../assets/snapchat.svg'
 import telegram from '../assets/telegram.svg'
 
-
 const Home: React.FC = () => {
   const router = useRouter()
   const { locale } = router
