@@ -487,6 +487,7 @@ export const CompaniesCarousel = styled.div`
   padding: 5vh 20vw;
   background-color: ${(props) => props.theme.colors.secondary};
   text-align: left;
+  overflow: hidden;
 
   .carousel {
 
@@ -495,12 +496,12 @@ export const CompaniesCarousel = styled.div`
       margin-bottom: 5vh;
     }
 
-    #cards-section{
+    .embla__container {
       display: flex;
       flex-direction: row;
     }
 
-    .company {
+    .embla__slide {
       background-color: ${(props) => props.theme.colors.color};
       color: ${(props) => props.theme.colors.background};
       height: 330px;
@@ -510,6 +511,8 @@ export const CompaniesCarousel = styled.div`
       text-align: center;
       font-size: 14px;
       margin-right: 2vw;
+      position: relative;
+      flex: 0 0 20%;
 
       #top {
         margin-bottom: 1.8vh;

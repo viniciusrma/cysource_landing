@@ -1,4 +1,5 @@
-import React from 'react'
+import React, { useEffect } from 'react'
+import { useEmblaCarousel } from 'embla-carousel/react'
 import Head from 'next/head'
 import {
   AdvancedCourses,
@@ -40,6 +41,16 @@ const Home: React.FC = () => {
     const locale = e.target.value
     router.push('/', '/', { locale })
   }
+
+  const [emblaRef, emblaApi] = useEmblaCarousel({
+    loop: true,
+    skipSnaps: false
+  })
+  useEffect(() => {
+    if (emblaApi) {
+      // Embla API is ready
+    }
+  }, [emblaApi])
 
   return (
     <Container>
@@ -291,11 +302,11 @@ const Home: React.FC = () => {
           </div>
         </div>
       </AdvancedCourses>
-      <CompaniesCarousel>
+      <CompaniesCarousel className="embla" ref={emblaRef}>
         <div className="carousel">
           <h1>{lang.companiesCarouselTitle}</h1>
-          <div id="cards-section">
-            <div className="company">
+          <div className="embla__container">
+            <div className="embla__slide">
               <div id="top">
                 <img src={facebook} alt="facebook logo" />
                 <p>Handling messages on facebook</p>
@@ -307,7 +318,7 @@ const Home: React.FC = () => {
                 <a href="">PCWorld</a>
               </div>
             </div>
-            <div className="company">
+            <div className="embla__slide">
               <div id="top">
                 <img src={amazon} alt="facebook logo" />
                 <p>Handling messages on facebook</p>
@@ -319,7 +330,7 @@ const Home: React.FC = () => {
                 <a href="">PCWorld</a>
               </div>
             </div>
-            <div className="company">
+            <div className="embla__slide">
               <div id="top">
                 <img src={tiktok} alt="facebook logo" />
                 <p>Handling messages on facebook</p>
@@ -331,7 +342,7 @@ const Home: React.FC = () => {
                 <a href="">PCWorld</a>
               </div>
             </div>
-            <div className="company">
+            <div className="embla__slide">
               <div id="top">
                 <img src={lg} alt="facebook logo" />
                 <p>Handling messages on facebook</p>
@@ -343,7 +354,7 @@ const Home: React.FC = () => {
                 <a href="">PCWorld</a>
               </div>
             </div>
-            <div className="company">
+            <div className="embla__slide">
               <div id="top">
                 <img src={dji} alt="facebook logo" />
                 <p>Handling messages on facebook</p>
@@ -355,7 +366,7 @@ const Home: React.FC = () => {
                 <a href="">PCWorld</a>
               </div>
             </div>
-            <div className="company">
+            <div className="embla__slide">
               <div id="top">
                 <img src={whatsapp} alt="facebook logo" />
                 <p>Handling messages on facebook</p>
@@ -367,7 +378,7 @@ const Home: React.FC = () => {
                 <a href="">PCWorld</a>
               </div>
             </div>
-            <div className="company">
+            <div className="embla__slide">
               <div id="top">
                 <img src={paypal} alt="facebook logo" />
                 <p>Handling messages on facebook</p>
@@ -379,7 +390,7 @@ const Home: React.FC = () => {
                 <a href="">PCWorld</a>
               </div>
             </div>
-            <div className="company">
+            <div className="embla__slide">
               <div id="top">
                 <img src={aliexpress} alt="facebook logo" />
                 <p>Handling messages on facebook</p>
@@ -391,7 +402,7 @@ const Home: React.FC = () => {
                 <a href="">PCWorld</a>
               </div>
             </div>
-            <div className="company">
+            <div className="embla__slide">
               <div id="top">
                 <img src={ebay} alt="facebook logo" />
                 <p>Handling messages on facebook</p>
@@ -403,7 +414,7 @@ const Home: React.FC = () => {
                 <a href="">PCWorld</a>
               </div>
             </div>
-            <div className="company">
+            <div className="embla__slide">
               <div id="top">
                 <img src={snapchat} alt="facebook logo" />
                 <p>Handling messages on facebook</p>
@@ -415,7 +426,7 @@ const Home: React.FC = () => {
                 <a href="">PCWorld</a>
               </div>
             </div>
-            <div className="company">
+            <div className="embla__slide">
               <div id="top">
                 <img src={telegram} alt="facebook logo" />
                 <p>Handling messages on facebook</p>
