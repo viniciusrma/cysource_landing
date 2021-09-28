@@ -13,10 +13,6 @@ const ProfessionalCareer: React.FC = () => {
   const router = useRouter()
   const { locale } = router
   const lang = locale === 'ptBR' ? ptBR : he
-  const changeLanguage = (e) => {
-    const locale = e.target.value
-    router.push('/', '/', { locale })
-  }
 
   return (
     <ProCareer>
