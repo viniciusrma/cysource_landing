@@ -1,6 +1,14 @@
 import styled from 'styled-components'
 
 export const InfoAboutCyberSecutity = styled.div`
+  // Mobile devices
+  @media (max-width: 480px) {
+  }
+
+  // ipad, tablets
+  @media (max-width: 768px) {
+  }
+
   width: 100%;
   display: flex;
   padding: 7vh 18vw;

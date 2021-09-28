@@ -1,6 +1,16 @@
 import styled from 'styled-components'
 
 export const Skills_Courses = styled.div`
+  // Mobile devices
+  @media (max-width: 480px) {
+
+  }
+
+  // ipad, tablets
+  @media (max-width: 768px) {
+
+  }
+
   width: 100%;
   display: flex;
   flex-direction: column;
