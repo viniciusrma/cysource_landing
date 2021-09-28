@@ -1,6 +1,6 @@
+import 'antd/dist/antd.css';
 import { AppProps } from 'next/app'
 import { ThemeProvider } from 'styled-components';
-
 import GlobalStyle from '../styles/global';
 import theme from '../styles/theme';
 
