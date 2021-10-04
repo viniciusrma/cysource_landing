@@ -16,8 +16,43 @@ const Header: React.FC = () => {
 
   return (
     <HeaderSection>
-      <div>
+      <nav className="navbar">
         <img className="logo" src={logo} alt="CySource logo" />
+        <ul className="nav-menu">
+          <li className="nav-item">
+            <a href="#" className="nav-link">
+              {lang.career}
+            </a>
+          </li>
+          <li className="nav-item">
+            <a href="#" className="nav-link">
+              {lang.plans}
+            </a>
+          </li>
+          <li className="nav-item">
+            <a href="#" className="nav-link">
+              {lang.community}
+            </a>
+          </li>
+          <li className="nav-item">
+            <a href="#" className="nav-link">
+              {lang.forOrganizations}
+            </a>
+          </li>
+          <li className="nav-item">
+            <a href="#" className="nav-link">
+              {lang.partners}
+            </a>
+          </li>
+        </ul>
+        <div className="hamburger">
+          <span className="bar"></span>
+          <span className="bar"></span>
+          <span className="bar"></span>
+        </div>
+      </nav>
+
+      {/* <div>
         <button id="nav-button">{lang.career}</button>
         <button id="nav-button">{lang.plans}</button>
         <button id="nav-button">{lang.community}</button>
@@ -31,7 +66,7 @@ const Header: React.FC = () => {
       >
         <option value="ptBR">pt-BR</option>
         <option value="he">he</option>
-      </select>
+      </select> */}
     </HeaderSection>
   )
 }

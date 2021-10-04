@@ -27,12 +27,7 @@ const Home: React.FC = () => {
         <title>{lang.cysource}</title>
       </Head>
       <Header />
-      <Landing />
-      <ForOrganizations />
-      <ProfessionalCareer />
-      <AboutCybersecurity />
-      <SkillsCourses />
-      <CompaniesCarousel />
+
     </Container>
   )
 }
