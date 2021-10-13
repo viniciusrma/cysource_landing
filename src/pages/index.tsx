@@ -11,7 +11,6 @@ import ProfessionalCareer from '../sections/professionalCareer'
 import AboutCybersecurity from '../sections/aboutCybersecurity'
 import SkillsCourses from '../sections/skillsCourses'
 import CompaniesCarousel from '../sections/companiesCarousel'
-import { HeaderSection } from '../styles/sections/Header'
 
 const Home: React.FC = () => {
   const router = useRouter()
@@ -27,7 +26,8 @@ const Home: React.FC = () => {
       <Head>
         <title>{lang.cysource}</title>
       </Head>
-      <HeaderSection />
+      <Header1 />
+      <Landing />
     </Container>
   )
 }

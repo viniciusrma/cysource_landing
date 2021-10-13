@@ -2,14 +2,6 @@ import styled from 'styled-components'
 import mainBackground from '../../assets/mainBackground.svg'
 
 export const LandingSection = styled.div`
-  // Mobile devices
-  @media (max-width: 480px) {
-  }
-
-  // ipad, tablets
-  @media (max-width: 768px) {
-  }
-
   height: 91vh;
   width: 100%;
   display: flex;
@@ -21,6 +13,11 @@ export const LandingSection = styled.div`
   background-position: bottom right;
   background-repeat: no-repeat;
   background-size: 50%;
+
+  @media (max-width: 858px) {
+    background-image: none;
+    padding: 10vh 25vw;
+  }
 
   #texts {
     margin-top: 10vh;

@@ -1,5 +1,4 @@
 import React from 'react'
-import 'antd/dist/antd.css'
 import { HeaderSection } from '../styles/sections/Header'
 import { useRouter } from 'next/dist/client/router'
 import ptBR from '../i18n/ptBR'
@@ -19,6 +18,10 @@ const Header1: React.FC = () => {
     <HeaderSection>
       <nav className="navbar">
         <img className="logo" src={logo} alt="CySource logo" />
+        <input type="checkbox" id="check" />
+        <label htmlFor="check" className="checkbtn">
+          <i className="fas fa-bars"></i>
+        </label>
         <ul className="nav-menu">
           <li className="nav-item">
             <a href="#" className="nav-link">
@@ -46,28 +49,17 @@ const Header1: React.FC = () => {
             </a>
           </li>
         </ul>
-        <div className="hamburger">
-          <span className="bar"></span>
-          <span className="bar"></span>
-          <span className="bar"></span>
-        </div>
       </nav>
 
-      <div>
-        <button id="nav-button">{lang.career}</button>
-        <button id="nav-button">{lang.plans}</button>
-        <button id="nav-button">{lang.community}</button>
-        <button id="nav-button">{lang.forOrganizations}</button>
-        <button id="nav-button">{lang.partners}</button>
-      </div>
-      <select
-        name="languageChanger"
+      {/* <select
+        className="languageSelector"
+        name="languageSelector"
         onChange={changeLanguage}
         defaultValue={locale}
       >
         <option value="ptBR">pt-BR</option>
         <option value="he">he</option>
-      </select>
+      </select> */}
     </HeaderSection>
   )
 }

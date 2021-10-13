@@ -34,6 +34,7 @@ export default class MyDocument extends Document {
       <Html lang="pt">
         <Head>
           <meta charSet="utf-8" />
+          <script src="https://kit.fontawesome.com/a076d05399.js" crossOrigin="anonymous"></script>
           <link
             href="https://fonts.googleapis.com/css2?family=Encode+Sans+Expanded:wght@400;500;600;700"
             rel="stylesheet"
