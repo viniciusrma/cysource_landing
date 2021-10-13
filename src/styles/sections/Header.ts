@@ -36,6 +36,7 @@ export const HeaderSection = styled.div`
     }
   }
 
+<<<<<<< Updated upstream
   img {
     float: left;
   }
@@ -120,4 +121,11 @@ export const HeaderSection = styled.div`
   //     background-color: ${(props) => props.theme.colors.contrast};
   //   }
   // }
+=======
+  .logo {
+
+  }
+
+
+>>>>>>> Stashed changes
 `

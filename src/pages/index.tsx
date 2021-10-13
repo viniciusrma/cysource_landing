@@ -4,13 +4,14 @@ import { Container } from '../styles/sections/Container'
 import { useRouter } from 'next/dist/client/router'
 import ptBR from '../i18n/ptBR'
 import he from '../i18n/he'
-import Header from '../sections/header'
+import Header1 from '../sections/header'
 import Landing from '../sections/landing'
 import ForOrganizations from '../sections/forOrganizations'
 import ProfessionalCareer from '../sections/professionalCareer'
 import AboutCybersecurity from '../sections/aboutCybersecurity'
 import SkillsCourses from '../sections/skillsCourses'
 import CompaniesCarousel from '../sections/companiesCarousel'
+import { HeaderSection } from '../styles/sections/Header'
 
 const Home: React.FC = () => {
   const router = useRouter()
@@ -26,8 +27,7 @@ const Home: React.FC = () => {
       <Head>
         <title>{lang.cysource}</title>
       </Head>
-      <Header />
-
+      <HeaderSection />
     </Container>
   )
 }

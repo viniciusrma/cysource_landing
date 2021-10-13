@@ -1,11 +1,12 @@
 import React from 'react'
+import 'antd/dist/antd.css'
 import { HeaderSection } from '../styles/sections/Header'
 import { useRouter } from 'next/dist/client/router'
 import ptBR from '../i18n/ptBR'
 import he from '../i18n/he'
 import logo from '../assets/logo.svg'
 
-const Header: React.FC = () => {
+const Header1: React.FC = () => {
   const router = useRouter()
   const { locale } = router
   const lang = locale === 'ptBR' ? ptBR : he
@@ -52,7 +53,7 @@ const Header: React.FC = () => {
         </div>
       </nav>
 
-      {/* <div>
+      <div>
         <button id="nav-button">{lang.career}</button>
         <button id="nav-button">{lang.plans}</button>
         <button id="nav-button">{lang.community}</button>
@@ -66,9 +67,9 @@ const Header: React.FC = () => {
       >
         <option value="ptBR">pt-BR</option>
         <option value="he">he</option>
-      </select> */}
+      </select>
     </HeaderSection>
   )
 }
 
-export default Header
+export default Header1
