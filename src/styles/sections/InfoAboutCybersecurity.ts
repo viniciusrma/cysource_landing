@@ -1,25 +1,25 @@
 import styled from 'styled-components'
 
 export const InfoAboutCyberSecutity = styled.div`
-  // Mobile devices
-  @media (max-width: 480px) {
-  }
-
-  // ipad, tablets
-  @media (max-width: 768px) {
-  }
-
   width: 100%;
   display: flex;
-  padding: 7vh 18vw;
+  padding: 4rem 20rem;
   background-color: ${(props) => props.theme.colors.primary};
   color: ${(props) => props.theme.colors.background};
   text-align: left;
   justify-content: space-around;
 
-  #left,
+  @media only screen and (max-width: 1024px) {
+    padding: 4rem 6rem !important;
+  }
+
+  @media only screen and (max-width: 1280px) {
+    padding: 4rem 8rem;
+  }
+
   #right {
-    width: 40%;
+    width: 30rem;
+    margin-top: 4rem;
   }
 
   h1 {

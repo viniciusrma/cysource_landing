@@ -15,7 +15,7 @@ export const HeaderSection = styled.div`
       width: 100%;
       height: 100vh;
       background: ${(props) => props.theme.colors.background};
-      left: -1000px;
+      left: -1500px;
       top: 100px;
       text-align: center;
       transition: all .5s;
@@ -40,7 +40,7 @@ export const HeaderSection = styled.div`
       width: 100%;
       height: 100vh;
       background: ${(props) => props.theme.colors.background};
-      left: -1000px;
+      left: -1500px;
       text-align: center;
     }
 

@@ -30,6 +30,7 @@ const Home: React.FC = () => {
       <Landing />
       <ForOrganizations />
       <ProfessionalCareer />
+      <AboutCybersecurity />
     </Container>
   )
 }
