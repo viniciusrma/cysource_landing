@@ -2,12 +2,10 @@ import styled from 'styled-components'
 import mainBackground from '../../assets/mainBackground.svg'
 
 export const LandingSection = styled.div`
-  height: 91vh;
   width: 100%;
   display: flex;
   text-align: left;
-  padding: 10vh 20vw;
-
+  padding: 8rem 18rem 24rem;
   background-image: url(${mainBackground});
   background-color: ${(props) => props.theme.colors.background} !important;
   background-position: bottom right;
@@ -19,8 +17,20 @@ export const LandingSection = styled.div`
     padding: 10vh 25vw;
   }
 
+  @media only screen and (max-width: 1024px) {
+    padding: 1rem 8rem 8rem !important;
+  }
+
+  @media only screen and (max-width: 1280px) {
+    padding: 1rem 8rem 8rem !important;
+
+    #texts {
+      margin-top: 4rem;
+    }
+  }
+
   #texts {
-    margin-top: 10vh;
+    margin-top: 4rem;
 
     h1 {
       font-size: 36px;

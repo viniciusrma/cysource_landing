@@ -30,38 +30,40 @@ const ProfessionalCareer: React.FC = () => {
             </a>
           </div>
         </div>
-        <div id="pentest">
-          <img src={pentest} alt="" className="main" />
-          <div id="card">
-            <h1>Title</h1>
-            <div id="info">
-              <img src={skill_level} alt="" /> <p>{lang.beginner}</p>
-              <img src={schedule} alt="" /> <p>{lang.fourtyHour}</p>
+        <div id="right">
+          <div id="pentest">
+            <img src={pentest} alt="" className="main" />
+            <div id="card">
+              <h1>Title</h1>
+              <div id="info">
+                <img src={skill_level} alt="" /> <p>{lang.beginner}</p>
+                <img src={schedule} alt="" /> <p>{lang.fourtyHour}</p>
+              </div>
+              <p>{lang.cardDescription}</p>
+              <div id="actions">
+                <button id="details">{lang.moreDetails}</button>
+                <button id="getit">{lang.getItNow}</button>
+              </div>
+              <p>{lang.coordinator}</p>
+              <p>{lang.instructor}</p>
             </div>
-            <p>{lang.cardDescription}</p>
-            <div id="actions">
-              <button id="details">{lang.moreDetails}</button>
-              <button id="getit">{lang.getItNow}</button>
-            </div>
-            <p>{lang.coordinator}</p>
-            <p>{lang.instructor}</p>
           </div>
-        </div>
-        <div id="forensics-full">
-          <img src={pentest} alt="" className="main" />
-          <div id="card">
-            <h1>Title</h1>
-            <div id="info">
-              <img src={skill_level} alt="" /> <p>{lang.beginner}</p>
-              <img src={schedule} alt="" /> <p>{lang.fourtyHour}</p>
+          <div id="forensics-full">
+            <img src={pentest} alt="" className="main" />
+            <div id="card">
+              <h1>Title</h1>
+              <div id="info">
+                <img src={skill_level} alt="" /> <p>{lang.beginner}</p>
+                <img src={schedule} alt="" /> <p>{lang.fourtyHour}</p>
+              </div>
+              <p>{lang.cardDescription}</p>
+              <div id="actions">
+                <button id="details">{lang.moreDetails}</button>
+                <button id="getit">{lang.getItNow}</button>
+              </div>
+              <p>{lang.coordinator}</p>
+              <p>{lang.instructor}</p>
             </div>
-            <p>{lang.cardDescription}</p>
-            <div id="actions">
-              <button id="details">{lang.moreDetails}</button>
-              <button id="getit">{lang.getItNow}</button>
-            </div>
-            <p>{lang.coordinator}</p>
-            <p>{lang.instructor}</p>
           </div>
         </div>
       </div>

@@ -1,20 +1,86 @@
 import styled from 'styled-components'
 
 export const ProCareer = styled.div`
-  // Mobile devices
-  @media (max-width: 480px) {
-  }
-
-  // ipad, tablets
-  @media (max-width: 768px) {
-  }
-
   width: 100%;
   display: flex;
   flex-direction: column;
-  padding: 7vh 18vw;
+  padding: 4rem 12rem;
   background-color: ${(props) => props.theme.colors.background};
   text-align: left;
+
+  @media only screen and (max-width: 770px) {
+    #pentest-content {
+      #left {
+        width: 16rem !important;
+      }
+
+      #right {
+        flex-direction: column !important;
+        #pentest {
+          margin-bottom: 6rem;
+        }
+      }
+    }
+  }
+
+  @media only screen and (max-width: 1024px) {
+    padding: 4rem !important;
+    p {
+      font-size: 14px;
+    }
+
+    #pentest-content {
+      #left {
+        width: 16rem !important;
+      }
+    }
+
+    #pentest,
+    #forensics-full {
+      width: 300px !important;
+      height: 450px !important;
+      padding: 1rem !important;
+
+      .main {
+        width: 150px !important;
+      }
+    }
+
+    #actions {
+      button {
+        width: 7rem !important;
+        font-size: 14px !important;
+      }
+    }
+  }
+
+  @media only screen and (max-width: 1400px) {
+    padding: 6rem 8rem;
+    p {
+      font-size: 14px;
+    }
+    #pentest,
+    #forensics-full {
+      width: 300px !important;
+      height: 450px !important;
+      padding: 1vh 2vh;
+
+      .main {
+        width: 150px !important;
+      }
+    }
+
+    #pentest {
+      margin-right: 1rem !important;
+    }
+
+    #actions {
+      button {
+        width: 7rem !important;
+        font-size: 14px !important;
+      }
+    }
+  }
 
   h1 {
     text-align: center;
@@ -22,12 +88,13 @@ export const ProCareer = styled.div`
 
   #pentest-content {
     display: flex;
-    justify-content: space-around;
-    margin-top: 10vh;
+    justify-content: space-between;
+    margin-top: 5rem;
 
     #left {
       margin-top: 24px;
-      width: 30%;
+      margin-right: 2rem;
+      width: 20rem;
 
       #logo {
         margin: 24px 0px;
@@ -57,14 +124,23 @@ export const ProCareer = styled.div`
       }
     }
 
+    #right {
+      display: flex;
+      flex-direction: row;
+    }
+
+    #pentest {
+      margin-right: 4rem;
+    }
+
     #pentest,
     #forensics-full {
       text-align: center;
-      width: 400px;
-      height: 560px;
+      width: 380px;
+      height: 500px;
       border-radius: 50px;
       border: 5px solid #ed1c24;
-      padding: 1vh 1.5vw;
+      padding: 1rem 1.5rem;
 
       .main {
         position: relative;
@@ -91,13 +167,14 @@ export const ProCareer = styled.div`
         }
 
         #actions {
-          margin: 16px 0px 40px 0px;
+          margin: 24px 0px;
           justify-content: space-around;
           display: flex;
           button {
+            padding: 8px;
             justify-content: center;
-            width: 5.7vw;
-            height: 4vh;
+            width: 8rem;
+            height: 3rem;
             background-color: ${(props) => props.theme.colors.contrast};
             border-radius: 4px;
             border: none;

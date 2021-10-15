@@ -10,7 +10,6 @@ export const HeaderSection = styled.div`
 
   // ipad, tablets
   @media (max-width: 952px) {
-
     ul {
       position: fixed;
       width: 100%;
@@ -29,7 +28,6 @@ export const HeaderSection = styled.div`
         left: 100;
       }
     }
-
   }
 
   @media (max-width: 858px) {
@@ -64,7 +62,7 @@ export const HeaderSection = styled.div`
 
   display: flex;
   justify-content: space-between;
-  height: 96px;
+  height: 100px;
   width: 100%;
 
   ul {
