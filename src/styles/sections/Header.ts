@@ -2,7 +2,10 @@ import styled from 'styled-components'
 
 export const HeaderSection = styled.div`
   // Mobile devices
-  @media (max-width: 480px) {
+  @media (max-width: 1125px) {
+    a.nav-link {
+      font-size: 14px;
+    }
   }
 
   // ipad, tablets
@@ -13,7 +16,7 @@ export const HeaderSection = styled.div`
       width: 100%;
       height: 100vh;
       background: ${(props) => props.theme.colors.background};
-      left: -400px;
+      left: -1000px;
       top: 100px;
       text-align: center;
       transition: all .5s;
@@ -23,7 +26,7 @@ export const HeaderSection = styled.div`
       }
 
       #check:checked ~ ul {
-        left: 0;
+        left: 100;
       }
     }
 
@@ -39,7 +42,7 @@ export const HeaderSection = styled.div`
       width: 100%;
       height: 100vh;
       background: ${(props) => props.theme.colors.background};
-      left: -600px;
+      left: -1000px;
       text-align: center;
     }
 
@@ -92,7 +95,7 @@ export const HeaderSection = styled.div`
   }
 
   .nav-link {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     font-weight: 600;
     color: ${(props) => props.theme.colors.color};
     text-transform: uppercase;

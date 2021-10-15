@@ -1,14 +1,6 @@
 import styled from 'styled-components'
 
 export const ForOrgs = styled.div`
-  // Mobile devices
-  @media (max-width: 480px) {
-  }
-
-  // ipad, tablets
-  @media (max-width: 768px) {
-  }
-
   width: 100%;
   display: flex;
   flex-direction: space-around;
@@ -38,8 +30,30 @@ export const ForOrgs = styled.div`
     padding: 10vh 8vw;
   }
 
-  @media only screen and (max-width: 1000px) {
-    padding: 10vh 6vw;
+  @media only screen and (max-width: 1100px) {
+    padding: 10vh 2vw;
+  }
+
+  // Mobile devices
+  @media only screen and (max-width: 480px) {
+    display: inline-block;
+    padding: 50px 80px;
+    align-items: center;
+
+    #texts {
+      margin-top: 4vh;
+    }
+
+    div#forOrg-buttons {
+      padding-right: 0px;
+    }
+  }
+
+  // ipad, tablets
+  @media only screen and (max-width: 768px) {
+    #start {
+      margin-bottom: 1vh;
+    }
   }
 
   #texts {
@@ -62,6 +76,7 @@ export const ForOrgs = styled.div`
       text-align: left;
       margin-top: 2vh;
       button {
+        width: 184px;
         cursor: pointer;
         padding: 16px 40px;
         font: 600 16px 'Encode Sans Expanded', sans-serif;

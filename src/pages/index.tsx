@@ -28,6 +28,8 @@ const Home: React.FC = () => {
       </Head>
       <Header1 />
       <Landing />
+      <ForOrganizations />
+      <ProfessionalCareer />
     </Container>
   )
 }

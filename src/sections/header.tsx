@@ -48,18 +48,20 @@ const Header1: React.FC = () => {
               {lang.partners}
             </a>
           </li>
+
+          <li className="nav-item">
+            <select
+              className="languageSelector"
+              name="languageSelector"
+              onChange={changeLanguage}
+              defaultValue={locale}
+            >
+              <option value="ptBR">pt-BR</option>
+              <option value="he">he</option>
+            </select>
+          </li>
         </ul>
       </nav>
-
-      {/* <select
-        className="languageSelector"
-        name="languageSelector"
-        onChange={changeLanguage}
-        defaultValue={locale}
-      >
-        <option value="ptBR">pt-BR</option>
-        <option value="he">he</option>
-      </select> */}
     </HeaderSection>
   )
 }
