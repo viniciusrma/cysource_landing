@@ -1,9 +1,9 @@
 import React from 'react'
 import { useRouter } from 'next/dist/client/router'
-import ptBR from '../i18n/ptBR'
-import he from '../i18n/he'
-import { InfoAboutCyberSecutity } from '../styles/sections/InfoAboutCybersecurity'
-import questions from '../assets/questions.svg'
+import ptBR from '../../i18n/ptBR'
+import he from '../../i18n/he'
+import { InfoAboutCyberSecutity } from './Style/InfoAboutCybersecurity'
+import questions from '../../assets/questions.svg'
 
 const AboutCybersecurity: React.FC = () => {
   const router = useRouter()

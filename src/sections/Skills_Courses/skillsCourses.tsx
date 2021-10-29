@@ -1,8 +1,8 @@
 import React from 'react'
 import { useRouter } from 'next/dist/client/router'
-import ptBR from '../i18n/ptBR'
-import he from '../i18n/he'
-import { Skills_Courses } from '../styles/sections/SkillsCourses'
+import ptBR from '../../i18n/ptBR'
+import he from '../../i18n/he'
+import { Skills_Courses } from './Style/SkillsCourses'
 
 import skill_level from '../assets/skill-level.svg'
 import schedule from '../assets/schedule.svg'
