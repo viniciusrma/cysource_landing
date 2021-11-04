@@ -1,40 +1,33 @@
-import React, { useEffect } from 'react'
-import { useEmblaCarousel } from 'embla-carousel/react'
+import React from 'react'
 import { useRouter } from 'next/dist/client/router'
 import ptBR from '../../i18n/ptBR'
 import he from '../../i18n/he'
 import { CarouselOfCases } from './Style/Carousel'
-import facebook from '../assets/facebook.svg'
-import amazon from '../assets/amazon.svg'
-import tiktok from '../assets/tiktok.svg'
-import lg from '../assets/lg.svg'
-import dji from '../assets/dji.svg'
-import whatsapp from '../assets/whatsapp.svg'
-import paypal from '../assets/paypal.svg'
-import aliexpress from '../assets/aliexpress.svg'
-import ebay from '../assets/ebay.svg'
-import snapchat from '../assets/snapchat.svg'
-import telegram from '../assets/telegram.svg'
+import facebook from '../assets/img/facebook.svg'
+import amazon from '../assets/img/amazon.svg'
+import tiktok from '../assets/img/tiktok.svg'
+import lg from '../assets/img/lg.svg'
+import dji from '../assets/img/dji.svg'
+import whatsapp from '../assets/img/whatsapp.svg'
+import paypal from '../assets/img/paypal.svg'
+import aliexpress from '../assets/img/aliexpress.svg'
+import ebay from '../assets/img/ebay.svg'
+import snapchat from '../assets/img/snapchat.svg'
+import telegram from '../assets/img/telegram.svg'
+import Carousel from "../../components/Carousel";
+import { courses } from "../../utils/courses";
+
+
 
 const CompaniesCarousel: React.FC = () => {
   const router = useRouter()
   const { locale } = router
   const lang = locale === 'ptBR' ? ptBR : he
 
-  const [emblaRef, emblaApi] = useEmblaCarousel({
-    loop: true,
-    skipSnaps: false
-  })
-
-  useEffect(() => {
-    if (emblaApi) {
-      // Embla API is ready
-    }
-  }, [emblaApi])
-
   return (
-    <CarouselOfCases className="embla" ref={emblaRef}>
-      <div className="carousel">
+    <>
+    <Carousel CarouselItemsObject={courses.non_active}/>
+    {/* <div className="carousel">
         <h1>{lang.companiesCarouselTitle}</h1>
         <div className="embla__container">
           <div className="embla__slide">
@@ -170,8 +163,8 @@ const CompaniesCarousel: React.FC = () => {
             </div>
           </div>
         </div>
-      </div>
-    </CarouselOfCases>
+      </div> */}
+    </>
   )
 }
 

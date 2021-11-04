@@ -3,7 +3,7 @@ import { HeaderSection } from './Style/Header'
 import { useRouter } from 'next/dist/client/router'
 import ptBR from '../../i18n/ptBR'
 import he from '../../i18n/he'
-import logo from '../../assets/logo.svg'
+import logo from '../../assets/img/logo.svg'
 
 const Header1: React.FC = () => {
   const router = useRouter()
