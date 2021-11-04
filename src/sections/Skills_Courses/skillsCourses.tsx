@@ -2,7 +2,7 @@ import React from 'react'
 import { useRouter } from 'next/dist/client/router'
 import ptBR from '../../i18n/ptBR'
 import he from '../../i18n/he'
-import { Skills_Courses } from './Style/SkillsCourses'
+import { Skills_Courses } from './style'
 
 import skill_level from '../assets/img/skill-level.svg'
 import schedule from '../assets/img/schedule.svg'

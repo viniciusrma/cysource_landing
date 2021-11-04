@@ -1,5 +1,5 @@
 import React from 'react'
-import { HeaderSection } from './Style/Header'
+import { HeaderSection } from './style'
 import { useRouter } from 'next/dist/client/router'
 import ptBR from '../../i18n/ptBR'
 import he from '../../i18n/he'

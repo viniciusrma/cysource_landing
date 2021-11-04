@@ -2,7 +2,7 @@ import React from 'react'
 import { useRouter } from 'next/dist/client/router'
 import ptBR from '../../i18n/ptBR'
 import he from '../../i18n/he'
-import { ForOrgs } from './Style/ForOrganizations'
+import { ForOrgs } from './style'
 import forOrg from '../../assets/img/forOrg.svg'
 
 const ForOrganizations: React.FC = () => {
