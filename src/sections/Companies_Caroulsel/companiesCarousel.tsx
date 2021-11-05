@@ -3,21 +3,8 @@ import { useRouter } from 'next/dist/client/router'
 import ptBR from '../../i18n/ptBR'
 import he from '../../i18n/he'
 import { CarouselOfCases } from './style'
-import facebook from '../assets/img/facebook.svg'
-import amazon from '../assets/img/amazon.svg'
-import tiktok from '../assets/img/tiktok.svg'
-import lg from '../assets/img/lg.svg'
-import dji from '../assets/img/dji.svg'
-import whatsapp from '../assets/img/whatsapp.svg'
-import paypal from '../assets/img/paypal.svg'
-import aliexpress from '../assets/img/aliexpress.svg'
-import ebay from '../assets/img/ebay.svg'
-import snapchat from '../assets/img/snapchat.svg'
-import telegram from '../assets/img/telegram.svg'
-import Carousel from "../../components/Carousel";
-import { courses } from "../../utils/courses";
-
-
+import Carousel from '../../components/Carousel'
+import { companies } from '../../utils/companiesServed'
 
 const CompaniesCarousel: React.FC = () => {
   const router = useRouter()
@@ -26,8 +13,8 @@ const CompaniesCarousel: React.FC = () => {
 
   return (
     <>
-    <Carousel CarouselItemsObject={courses.non_active}/>
-    {/* <div className="carousel">
+      <Carousel CarouselItemsObject={companies.served} />
+      {/* <div className="carousel">
         <h1>{lang.companiesCarouselTitle}</h1>
         <div className="embla__container">
           <div className="embla__slide">

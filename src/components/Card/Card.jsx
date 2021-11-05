@@ -1,7 +1,6 @@
 import React from 'react'
 import { CardWrapper, Main, Title, CardImg } from './Styles'
 import ProgressBar from '../ProgressBar'
-import amazon from '../../assets/img/amazon.svg'
 
 const Card = ({
   progressBar = false,
@@ -24,7 +23,8 @@ const Card = ({
       variant={variant}
       {...rest}
     >
-      <CardImg src={amazon} alt="" />
+      <CardImg src={require(`../../assets/img/${img}`).default} alt="" />
+
       <Main>
         <Title>{title}</Title>
         {progressBar && <ProgressBar done={progressDone} />}
