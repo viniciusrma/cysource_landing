@@ -3,7 +3,6 @@ import { CardWrapper, Main, Title, CardImg } from './Styles'
 import ProgressBar from '../ProgressBar'
 import amazon from '../../assets/img/amazon.svg'
 
-
 const Card = ({
   progressBar = false,
   progressDone,
