@@ -2,12 +2,12 @@ import React from 'react'
 import { useRouter } from 'next/dist/client/router'
 import ptBR from '../../i18n/ptBR'
 import he from '../../i18n/he'
-import { ProCareer } from './Style/ProfessionalCareer'
-import arrowRight from '../../assets/arrowRight.svg'
-import logo from '../../assets/logo.svg'
-import pentest from '../../assets/pentest.svg'
-import skill_level from '../../assets/skill-level.svg'
-import schedule from '../../assets/schedule.svg'
+import { ProCareer } from './style'
+import arrowRight from '../../assets/img/arrowRight.svg'
+import logo from '../../assets/img/logo.svg'
+import pentest from '../../assets/img/pentest.svg'
+import skill_level from '../../assets/img/skill-level.svg'
+import schedule from '../../assets/img/schedule.svg'
 
 const ProfessionalCareer: React.FC = () => {
   const router = useRouter()

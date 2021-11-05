@@ -2,11 +2,11 @@ import React from 'react'
 import { useRouter } from 'next/dist/client/router'
 import ptBR from '../../i18n/ptBR'
 import he from '../../i18n/he'
-import { Advanced } from './Style/AdvancedCourses'
+import { Advanced } from './style'
 
-import skill_level from '../assets/skill-level.svg'
-import schedule from '../assets/schedule.svg'
-import pentest from '../assets/pentest.svg'
+import skill_level from '../assets/img/skill-level.svg'
+import schedule from '../assets/img/schedule.svg'
+import pentest from '../assets/img/pentest.svg'
 
 const AdvancedCourses: React.FC = () => {
   const router = useRouter()

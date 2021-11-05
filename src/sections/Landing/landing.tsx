@@ -2,7 +2,7 @@ import React from 'react'
 import { useRouter } from 'next/dist/client/router'
 import ptBR from '../../i18n/ptBR'
 import he from '../../i18n/he'
-import { LandingSection } from './Style/Landing'
+import { LandingSection } from './style'
 
 const Landing: React.FC = () => {
   const router = useRouter()
