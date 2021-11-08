@@ -1,12 +1,13 @@
 import React from 'react'
+import Image from 'next/image'
 import { useRouter } from 'next/dist/client/router'
 import ptBR from '../../i18n/ptBR'
 import he from '../../i18n/he'
 import { Advanced } from './style'
 
-import skill_level from '../assets/img/skill-level.svg'
-import schedule from '../assets/img/schedule.svg'
-import pentest from '../assets/img/pentest.svg'
+import skill_level from '../../public/skill-level.svg'
+import schedule from '../../public/schedule.svg'
+import pentest from '../../public/pentest.svg'
 
 const AdvancedCourses: React.FC = () => {
   const router = useRouter()
@@ -22,12 +23,12 @@ const AdvancedCourses: React.FC = () => {
       <div className="container">
         <div id="left">
           <div id="malware-analysis">
-            <img src={pentest} alt="" className="main" />
+            <Image src={pentest} layout="fill" alt="" className="main" />
             <div id="card">
               <h1>Title</h1>
               <div id="info">
-                <img src={skill_level} alt="" /> <p>{lang.beginner}</p>
-                <img src={schedule} alt="" /> <p>{lang.fourtyHour}</p>
+                <Image src={skill_level} layout="fill" alt="" /> <p>{lang.beginner}</p>
+                <Image src={schedule} layout="fill" alt="" /> <p>{lang.fourtyHour}</p>
               </div>
               <p>{lang.cardDescription}</p>
               <div id="actions">

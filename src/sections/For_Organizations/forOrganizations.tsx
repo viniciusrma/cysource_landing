@@ -1,9 +1,11 @@
 import React from 'react'
+import Image from 'next/image'
+
 import { useRouter } from 'next/dist/client/router'
 import ptBR from '../../i18n/ptBR'
 import he from '../../i18n/he'
 import { ForOrgs } from './style'
-import forOrg from '../../assets/img/forOrg.svg'
+import forOrg from '../../public/forOrg.svg'
 
 const ForOrganizations: React.FC = () => {
   const router = useRouter()
@@ -13,7 +15,7 @@ const ForOrganizations: React.FC = () => {
   return (
     <ForOrgs>
       <div>
-        <img src={forOrg} alt="For orgs sticker" />
+        <Image src={forOrg} layout="fill" alt="For orgs sticker" />
       </div>
       <div id="texts">
         <h1>{lang.expertsOrganizations}</h1>

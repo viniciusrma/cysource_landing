@@ -23,7 +23,7 @@ const Card = ({
       variant={variant}
       {...rest}
     >
-      <CardImg src={require(`../../assets/img/${img}`).default} alt="" />
+      {/* <CardImg src={require(`../../assets/img/companies/${img}`).default} alt="" /> */}
 
       <Main>
         <Title>{title}</Title>

@@ -1,9 +1,11 @@
 import React from 'react'
+import Image from 'next/image'
+
 import { HeaderSection } from './style'
 import { useRouter } from 'next/dist/client/router'
 import ptBR from '../../i18n/ptBR'
 import he from '../../i18n/he'
-import logo from '../../assets/img/logo.svg'
+import logo from '../../public/logo.svg'
 
 const Header1: React.FC = () => {
   const router = useRouter()
@@ -17,7 +19,7 @@ const Header1: React.FC = () => {
   return (
     <HeaderSection>
       <nav className="navbar">
-        <img className="logo" src={logo} alt="CySource logo" />
+        <Image className="logo" src={logo} layout="fill" alt="CySource logo" />
         <input type="checkbox" id="check" />
         <label htmlFor="check" className="checkbtn">
           <i className="fas fa-bars"></i>

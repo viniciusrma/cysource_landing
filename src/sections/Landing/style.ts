@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import mainBackground from '../../assets/img/mainBackground.svg'
+import mainBackground from '../../public/mainBackground.svg'
 
 export const LandingSection = styled.div`
   width: 100%;

@@ -1,13 +1,14 @@
 import React from 'react'
+import Image from 'next/image'
 import { useRouter } from 'next/dist/client/router'
 import ptBR from '../../i18n/ptBR'
 import he from '../../i18n/he'
 import { ProCareer } from './style'
-import arrowRight from '../../assets/img/arrowRight.svg'
-import logo from '../../assets/img/logo.svg'
-import pentest from '../../assets/img/pentest.svg'
-import skill_level from '../../assets/img/skill-level.svg'
-import schedule from '../../assets/img/schedule.svg'
+import arrowRight from '../../public/arrowRight.svg'
+import logo from '../../public/logo.svg'
+import pentest from '../../public/pentest.svg'
+import skill_level from '../../public/skill-level.svg'
+import schedule from '../../public/schedule.svg'
 
 const ProfessionalCareer: React.FC = () => {
   const router = useRouter()
@@ -19,25 +20,25 @@ const ProfessionalCareer: React.FC = () => {
       <h1>{lang.professionalCareer}</h1>
       <div id="pentest-content">
         <div id="left">
-          <img id="logo" src={logo} alt="CySource logo" />
+          <Image id="logo" src={logo} layout="fill" alt="CySource logo" />
           <p>{lang.careerPathText1}</p>
           <br />
           <p>{lang.careerPathText2}</p>
           <div>
             <a>
               {lang.discoverPentest}
-              <img id="arrow" src={arrowRight} alt="Arrow right" />
+              <Image id="arrow" src={arrowRight} layout="fill" alt="Arrow right" />
             </a>
           </div>
         </div>
         <div id="right">
           <div id="pentest">
-            <img src={pentest} alt="" className="main" />
+            <Image src={pentest} layout="fill" alt="" className="main" />
             <div id="card">
               <h1>Title</h1>
               <div id="info">
-                <img src={skill_level} alt="" /> <p>{lang.beginner}</p>
-                <img src={schedule} alt="" /> <p>{lang.fourtyHour}</p>
+                <Image src={skill_level}  layout="fill" alt="" /> <p>{lang.beginner}</p>
+                <Image src={schedule} layout="fill" alt="" /> <p>{lang.fourtyHour}</p>
               </div>
               <p>{lang.cardDescription}</p>
               <div id="actions">
@@ -49,12 +50,12 @@ const ProfessionalCareer: React.FC = () => {
             </div>
           </div>
           <div id="forensics-full">
-            <img src={pentest} alt="" className="main" />
+            <Image src={pentest}  layout="fill" alt="" className="main" />
             <div id="card">
               <h1>Title</h1>
               <div id="info">
-                <img src={skill_level} alt="" /> <p>{lang.beginner}</p>
-                <img src={schedule} alt="" /> <p>{lang.fourtyHour}</p>
+                <Image src={skill_level} layout="fill" alt="" /> <p>{lang.beginner}</p>
+                <Image src={schedule} layout="fill" alt="" /> <p>{lang.fourtyHour}</p>
               </div>
               <p>{lang.cardDescription}</p>
               <div id="actions">

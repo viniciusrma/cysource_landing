@@ -1,9 +1,10 @@
 import React from 'react'
+import Image from 'next/image'
 import { useRouter } from 'next/dist/client/router'
 import ptBR from '../../i18n/ptBR'
 import he from '../../i18n/he'
 import { InfoAboutCyberSecutity } from './style'
-import questions from '../../assets/img/questions.svg'
+import questions from '../../public/questions.svg'
 
 const AboutCybersecurity: React.FC = () => {
   const router = useRouter()
@@ -13,7 +14,7 @@ const AboutCybersecurity: React.FC = () => {
   return (
     <InfoAboutCyberSecutity>
       <div id="left">
-        <img src={questions} alt="" />
+        <Image src={questions} layout="fill" alt="" />
       </div>
       <div id="right">
         <h1>{lang.doYouHaveQuestions}</h1>
