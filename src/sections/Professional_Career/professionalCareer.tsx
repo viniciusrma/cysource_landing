@@ -14,6 +14,7 @@ const ProfessionalCareer: React.FC = () => {
   const { locale } = router
   const lang = locale === 'ptBR' ? ptBR : he
 
+
   return (
     <ProCareer>
       <h1>{lang.professionalCareer}</h1>
