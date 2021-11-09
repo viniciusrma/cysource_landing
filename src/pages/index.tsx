@@ -11,6 +11,7 @@ import ProfessionalCareer from '../sections/Professional_Career/professionalCare
 import AboutCybersecurity from '../sections/About_Cybersecurity/aboutCybersecurity'
 import SkillsCourses from '../sections/Skills_Courses/skillsCourses'
 import CompaniesCarousel from '../sections/Companies_Caroulsel/companiesCarousel'
+import AdvancedCourses from '../sections/Advanced_Courses/advancedCourses'
 
 const Home: React.FC = () => {
   const router = useRouter()
@@ -32,6 +33,7 @@ const Home: React.FC = () => {
       <ProfessionalCareer />
       <AboutCybersecurity />
       <SkillsCourses />
+      <AdvancedCourses />
       <CompaniesCarousel />
     </Container>
   )

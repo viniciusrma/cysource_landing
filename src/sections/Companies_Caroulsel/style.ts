@@ -12,7 +12,7 @@ export const CarouselOfCases = styled.div`
   width: 100%;
   display: flex;
   flex-direction: column;
-  padding: 5vh 20vw;
+  padding: 5vh 4vw;
   background-color: ${(props) => props.theme.colors.secondary};
   text-align: left;
   overflow: hidden;

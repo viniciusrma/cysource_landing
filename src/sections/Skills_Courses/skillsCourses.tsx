@@ -18,8 +18,9 @@ const SkillsCourses: React.FC = () => {
 
   return (
     <Skills_Courses>
+      <h1 className="skills-title">{lang.skillsCourses}</h1>s
       <Carousel CarouselItemsObject={courses.active}/>
-      {/* <h1 className="skills-title">{lang.skillsCourses}</h1>
+      {/*
       <div>
         <div className="row">
           <div id="skill">

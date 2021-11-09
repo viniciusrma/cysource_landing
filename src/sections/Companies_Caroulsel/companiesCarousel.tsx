@@ -2,8 +2,9 @@ import React from 'react'
 import { useRouter } from 'next/dist/client/router'
 import ptBR from '../../i18n/ptBR'
 import he from '../../i18n/he'
-import Carousel from "../../components/Carousel";
-import { companies } from "../../utils/companies";
+import CompanyCarousel from '../../components/CompanyCarousel'
+import { companies } from '../../utils/companies'
+import { CarouselOfCases } from './style'
 
 const CompaniesCarousel: React.FC = () => {
   const router = useRouter()
@@ -12,8 +13,14 @@ const CompaniesCarousel: React.FC = () => {
 
   return (
     <>
-    <Carousel CarouselItemsObject={companies.attended}/>
-    {/* <div className="carousel">
+      <CarouselOfCases>
+        <div className="carousel">
+          <h1>{lang.companiesCarouselTitle}</h1>
+          <CompanyCarousel CarouselItemsObject={companies.attended} />
+        </div>
+      </CarouselOfCases>
+
+      {/* <div className="carousel">
         <h1>{lang.companiesCarouselTitle}</h1>
         <div className="embla__container">
           <div className="embla__slide">

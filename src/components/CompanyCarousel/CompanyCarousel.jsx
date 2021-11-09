@@ -1,6 +1,6 @@
 import React from 'react'
 import Slider from 'react-slick'
-import Card from './../../components/Card'
+import CompanyCard from './../../components/CompanyCard'
 import { SliderWrapper, CardWrapper } from './Styles'
 
 const CompanyCarousel = ({
@@ -36,24 +36,21 @@ const CompanyCarousel = ({
   return (
     <SliderWrapper>
       <Slider {...Defaultsettings}>
-        {CarouselItemsObject.map((itemObject) => {
-          return (
-            <CardWrapper>
-              <Card
-                title={itemObject.title}
-                subtitle={itemObject.subtitle}
-                description={itemObject.description}
-                time={itemObject.time}
-                img={itemObject.src}
-                width={300}
-                price={itemObject.price}
-              />
-            </CardWrapper>
-          )
-        })}
+        {CarouselItemsObject.map(function (itemObject) {
+            return (
+              <CardWrapper>
+                <CompanyCard
+                  title={itemObject.title}
+                  linkOne={itemObject.linkOne}
+                  linkTwo={itemObject.linkTwo}
+                  linkThree={itemObject.linkThree}
+                  linkFour={itemObject.linkFour} />
+              </CardWrapper>
+            )
+          })}
       </Slider>
     </SliderWrapper>
   )
 }
 
-export default Carousel
+export default CompanyCarousel

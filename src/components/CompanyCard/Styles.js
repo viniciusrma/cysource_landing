@@ -1,7 +1,8 @@
 import styled from 'styled-components'
 
 export const CardWrapper = styled.div`
-  background: ${(props) => props.theme.colors.background};
+  background: ${(props) => props.theme.colors.color};
+  color: ${(props) => props.theme.colors.background};
   border: 5px solid ${(props) => props.theme.colors.secondary};
   height: auto;
   margin: 1rem;

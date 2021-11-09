@@ -1,8 +1,17 @@
 import React from 'react'
-import { CardWrapper, Main, Title, LinkOne, LinkTwo, LinkThree, LinkFour, CardImg } from './Styles'
+import {
+  CardWrapper,
+  Main,
+  Title,
+  LinkOne,
+  LinkTwo,
+  LinkThree,
+  LinkFour,
+  CardImg
+} from './Styles'
 import amazon from '../../assets/img/courses/forensicsFull.svg'
 
-const Card = ({
+const CompanyCard = ({
   variant,
   children,
   width = 230,
@@ -10,10 +19,10 @@ const Card = ({
   className,
   img,
   title,
-  ourResearch,
-  canaltech,
-  computerWorld,
-  PCWorld,
+  linkOne,
+  linkTwo,
+  linkThree,
+  linkFour,
   ...rest
 }) => {
   return (
@@ -36,4 +45,4 @@ const Card = ({
   )
 }
 
-export default Card
+export default CompanyCard
