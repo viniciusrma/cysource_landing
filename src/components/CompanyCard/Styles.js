@@ -25,19 +25,19 @@ export const Title = styled.h1`
   font-size: 1rem;
 `
 
-export const Subtitle = styled.h2`
+export const LinkOne = styled.h2`
   font-size: 0.8rem;
 `
 
-export const Description = styled.p`
+export const LinkTwo = styled.p`
   font-size: 0.8rem;
 `
 
-export const Time = styled.p`
+export const LinkThree = styled.p`
   font-size: 0.8rem;
 `
 
-export const Instructor = styled.p`
+export const LinkFour = styled.p`
   font-size: 0.8rem;
 `
 

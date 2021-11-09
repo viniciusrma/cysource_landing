@@ -1,10 +1,8 @@
 import React from 'react'
-import { CardWrapper, Main, Title, Subtitle, Description, Time, Instructor, CardImg } from './Styles'
+import { CardWrapper, Main, Title, LinkOne, LinkTwo, LinkThree, LinkFour, CardImg } from './Styles'
 import amazon from '../../assets/img/courses/forensicsFull.svg'
 
 const Card = ({
-  progressBar = false,
-  progressDone,
   variant,
   children,
   width = 230,
@@ -12,11 +10,10 @@ const Card = ({
   className,
   img,
   title,
-  subtitle,
-  description,
-  time,
-  instructor,
-  price,
+  ourResearch,
+  canaltech,
+  computerWorld,
+  PCWorld,
   ...rest
 }) => {
   return (
@@ -30,10 +27,10 @@ const Card = ({
       <CardImg src={amazon} alt="" />
       <Main>
         <Title>{title}</Title>
-        <Subtitle>{subtitle}</Subtitle>
-        <Description>{description}</Description>
-        <Time>{time}</Time>
-        <Instructor>{instructor}</Instructor>
+        <LinkOne>{linkOne}</LinkOne>
+        <LinkTwo>{linkTwo}</LinkTwo>
+        <LinkThree>{linkThree}</LinkThree>
+        <LinkFour>{linkFour}</LinkFour>
       </Main>
     </CardWrapper>
   )

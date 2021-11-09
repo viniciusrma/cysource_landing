@@ -31,6 +31,7 @@ const Home: React.FC = () => {
       <ForOrganizations />
       <ProfessionalCareer />
       <AboutCybersecurity />
+      <SkillsCourses />
       <CompaniesCarousel />
     </Container>
   )

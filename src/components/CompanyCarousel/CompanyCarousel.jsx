@@ -3,7 +3,7 @@ import Slider from 'react-slick'
 import Card from './../../components/Card'
 import { SliderWrapper, CardWrapper } from './Styles'
 
-const Carousel = ({
+const CompanyCarousel = ({
   Defaultsettings = {
     dots: true,
     infinite: true,

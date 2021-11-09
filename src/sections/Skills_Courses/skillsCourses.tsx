@@ -4,9 +4,12 @@ import ptBR from '../../i18n/ptBR'
 import he from '../../i18n/he'
 import { Skills_Courses } from './style'
 
-import skill_level from '../assets/img/skill-level.svg'
-import schedule from '../assets/img/schedule.svg'
-import pentest from '../assets/img/pentest.svg'
+import skill_level from '../../assets/img/skill-level.svg'
+import schedule from '../../assets/img/schedule.svg'
+import pentest from '../../assets/img/pentest.svg'
+
+import Carousel from "../../components/Carousel";
+import { courses } from "../../utils/courses";
 
 const SkillsCourses: React.FC = () => {
   const router = useRouter()
@@ -15,7 +18,8 @@ const SkillsCourses: React.FC = () => {
 
   return (
     <Skills_Courses>
-      <h1 className="skills-title">{lang.skillsCourses}</h1>
+      <Carousel CarouselItemsObject={courses.active}/>
+      {/* <h1 className="skills-title">{lang.skillsCourses}</h1>
       <div>
         <div className="row">
           <div id="skill">
@@ -123,7 +127,7 @@ const SkillsCourses: React.FC = () => {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
     </Skills_Courses>
   )
 }
