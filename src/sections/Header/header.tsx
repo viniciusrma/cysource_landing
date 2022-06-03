@@ -1,11 +1,10 @@
-import React from 'react'
 import { HeaderSection } from './style'
 import { useRouter } from 'next/dist/client/router'
 import ptBR from '../../i18n/ptBR'
 import he from '../../i18n/he'
 import logo from '../../assets/img/logo.svg'
 
-const Header1: React.FC = () => {
+function Header1() {
   const router = useRouter()
   const { locale } = router
   const lang = locale === 'ptBR' ? ptBR : he

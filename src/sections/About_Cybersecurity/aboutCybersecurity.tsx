@@ -1,11 +1,11 @@
-import React from 'react'
 import { useRouter } from 'next/dist/client/router'
 import ptBR from '../../i18n/ptBR'
 import he from '../../i18n/he'
 import { InfoAboutCyberSecutity } from './style'
 import questions from '../../assets/img/questions.svg'
 
-const AboutCybersecurity: React.FC = () => {
+
+function AboutCybersecurity() {
   const router = useRouter()
   const { locale } = router
   const lang = locale === 'ptBR' ? ptBR : he

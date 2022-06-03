@@ -1,4 +1,3 @@
-import React from 'react'
 import Head from 'next/head'
 import { Container } from '../styles/Container'
 import { useRouter } from 'next/dist/client/router'
@@ -13,7 +12,7 @@ import SkillsCourses from '../sections/Skills_Courses/skillsCourses'
 import CompaniesCarousel from '../sections/Companies_Caroulsel/companiesCarousel'
 import AdvancedCourses from '../sections/Advanced_Courses/advancedCourses'
 
-const Home: React.FC = () => {
+function Home(){
   const router = useRouter()
   const { locale } = router
   const lang = locale === 'ptBR' ? ptBR : he
@@ -24,7 +23,7 @@ const Home: React.FC = () => {
 
   return (
     <Container>
-      <Head>
+      <Head children={''}>
         <title>{lang.cysource}</title>
       </Head>
       <Header1 />

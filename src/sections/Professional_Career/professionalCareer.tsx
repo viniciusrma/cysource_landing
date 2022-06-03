@@ -1,4 +1,3 @@
-import React from 'react'
 import { useRouter } from 'next/dist/client/router'
 import ptBR from '../../i18n/ptBR'
 import he from '../../i18n/he'
@@ -9,7 +8,7 @@ import pentest from '../../assets/img/pentest.svg'
 import skill_level from '../../assets/img/skill-level.svg'
 import schedule from '../../assets/img/schedule.svg'
 
-const ProfessionalCareer: React.FC = () => {
+function ProfessionalCareer() {
   const router = useRouter()
   const { locale } = router
   const lang = locale === 'ptBR' ? ptBR : he
